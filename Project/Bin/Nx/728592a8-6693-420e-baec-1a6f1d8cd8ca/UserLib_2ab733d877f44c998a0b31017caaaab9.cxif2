@@ -1,0 +1,23 @@
+MODULE NX END_MODULE {USING<\\NX>}
+MODULE OmronLib
+    MODULE MC_CmdTbl
+        MODULE SubParts
+
+FUNCTION {a<_n_o_t_d_i_v_i_d_e_d_!_>} GetMoveLinearCmdData : BOOL
+    VAR_INPUT CONSTANT
+        SeqNo : UINT;
+    END_VAR
+    VAR_IN_OUT
+        TskAttr : \\OmronLib\MC_CmdTbl\SubParts\sTSK_ATTR;
+    END_VAR
+    VAR_IN_OUT CONSTANT
+        MemData : \\OmronLib\MC_CmdTbl\sCMD_DATA;
+    END_VAR
+    VAR_IN_OUT
+        MoveLinearCmdIF : \\OmronLib\MC_CmdTbl\SubParts\sCMD_MOVELINE_IN;
+    END_VAR
+END_FUNCTION
+        END_MODULE
+    END_MODULE
+END_MODULE
+

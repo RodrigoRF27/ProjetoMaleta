@@ -1,0 +1,39 @@
+{IMPORT<ULs.cxip>}
+MODULE NX END_MODULE {USING<\\NX>}
+INTERFACE LV_bb7678d811c547eaa742c09ca084d4ae
+VAR
+    _dmmy : BOOL;
+END_VAR
+__VAR_SYSTEM CONSTANT
+    P_On : BOOL;
+    P_Off : BOOL;
+    P_CY : BOOL;
+    P_First_RunMode : BOOL;
+    P_First_Run : BOOL;
+__END_VAR
+__VAR_SYSTEM
+    P_PRGER : BOOL;
+__END_VAR
+VAR_INPUT CONSTANT
+    AxisNo : UINT;
+END_VAR
+VAR_IN_OUT
+    TskAttr : \\OmronLib\MC_CmdTbl\SubParts\sTSK_ATTR;
+END_VAR
+VAR_IN_OUT CONSTANT
+    SeqData : \\OmronLib\MC_CmdTbl\sSEQ_DATA;
+END_VAR
+VAR_OUTPUT
+    MoveMode : _eMC_MOVE_MODE;
+END_VAR
+VAR
+    TmpLREAL : LREAL;
+    TmpWORD : WORD;
+END_VAR
+END_INTERFACE
+MODULE NX
+TYPE
+ _dummy4 : (_dummydummy4 := 4);
+END_TYPE
+END_MODULE
+

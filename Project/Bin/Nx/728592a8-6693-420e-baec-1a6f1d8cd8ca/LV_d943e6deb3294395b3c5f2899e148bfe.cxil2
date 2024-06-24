@@ -1,0 +1,156 @@
+{IMPORT<ULs.cxip>}
+MODULE NX END_MODULE {USING<\\NX>}
+INTERFACE LV_d943e6deb3294395b3c5f2899e148bfe
+VAR
+    _dmmy : BOOL;
+END_VAR
+__VAR_SYSTEM CONSTANT
+    P_On : BOOL;
+    P_Off : BOOL;
+    P_CY : BOOL;
+    P_First_RunMode : BOOL;
+    P_First_Run : BOOL;
+__END_VAR
+__VAR_SYSTEM
+    P_PRGER : BOOL;
+__END_VAR
+VAR
+ _Diff_1c9ee80b739746caa50d6854257852ab: BOOL := FALSE;
+ _Diff_21df89e0b8b44948a85826d9d27955fe: BOOL := FALSE;
+ _Diff_2daee8f13c514a7581a93e9db55fcc96: BOOL := TRUE;
+ _Diff_3fae03f7d174419486c7273900000544: BOOL := TRUE;
+ _Diff_3fae03f7d174419486c727390000097c: BOOL := TRUE;
+ _Diff_3fae03f7d174419486c7273900000d70: BOOL := TRUE;
+ _Diff_3fae03f7d174419486c7273900001694: BOOL := TRUE;
+ _Diff_3fae03f7d174419486c7273900001697: BOOL := FALSE;
+ _Diff_517ce94b10754135b98af03428387c13: BOOL := TRUE;
+ _Diff_a8c06acc3f8e463ba0d8d025f7ee3a44: BOOL := TRUE;
+ _Diff_abc8c5208328472fbe5bc340454b1a75: BOOL := FALSE;
+ _Diff_c0169389fd1741f2ac06f8e71c60d04f: BOOL := TRUE;
+ _Diff_f478d628e461481db384238ae23c02ec: BOOL := TRUE;
+ _tmpRslt_STRING1986: STRING[1986] {N<D>};
+END_VAR
+VAR_EXTERNAL CONSTANT
+    MC_Axis000 : _sAXIS_REF;
+    _MC_AX : ARRAY[0..15] OF _sAXIS_REF;
+    MC_Axis001 : _sAXIS_REF;
+END_VAR
+VAR_EXTERNAL
+    VARsEixo00 : \\MyAxis;
+    SFTEmergenciaOK : BOOL;
+    SFTCartoesOK : BOOL;
+    IHMHabilitaJog0 : BOOL;
+    IHMMoveParameter : \\MoveParameter;
+    IHMMoveEixo0 : BOOL;
+    VARsEixo01 : \\MyAxis;
+    IHMMoveEixo1 : BOOL;
+    IHMHabilitaJog1 : BOOL;
+END_VAR
+VAR
+    InitEixosOK : BOOL;
+    Eixo00OK : BOOL;
+    fbMCPowerEixo00 : MC_Power;
+    fbMCResetEixo00 : MC_Reset;
+    fbMCHomeEixo00 : MC_Home;
+    AuxJogPos0 : BOOL;
+    AuxJogNeg0 : BOOL;
+    fbMCJogEixo00 : MC_MoveJog;
+    fbMCMoveEixo00 : MC_Move;
+    fbMCMoveEixo00Absolute : MC_Move;
+    fbMCMoveEixo00Relative : MC_Move;
+    TestSafetyOK : BOOL;
+    StrErroServo01 : STRING[256];
+    fbMCMoveEixo00Velcity : MC_MoveVelocity;
+    fbMCStopEixo00 : MC_Stop;
+    AuxMoveSpeed0 : REAL;
+    AuxMoveChangeSpeed0 : BOOL;
+    DelayChangeSpeed0 : TON;
+    Eixo01OK : BOOL;
+    fbMCPowerEixo01 : MC_Power;
+    fbMCResetEixo01 : MC_Reset;
+    fbMCHomeEixo01 : MC_Home;
+    StrErroServo02 : STRING[256];
+    fbMCMoveEixo01 : MC_Move;
+    fbMCMoveEixo01Absolute : MC_Move;
+    fbMCMoveEixo01Relative : MC_Move;
+    AuxMoveChangeSpeed1 : BOOL;
+    fbMCMoveEixo01Velcity : MC_MoveVelocity;
+    AuxMoveSpeed1 : REAL;
+    DelayChangeSpeed1 : TON;
+    fbMCStopEixo01 : MC_Stop;
+    AuxJogPos1 : BOOL;
+    AuxJogNeg1 : BOOL;
+    fbMCJogEixo01 : MC_MoveJog;
+    AuxMoveTorq : BOOL;
+    fbMCToqueCtrlEixo0 : MC_TorqueControl;
+    AuxTC_Torque : LREAL;
+    AuxTC_TRamp : LREAL;
+    AuxTC_Velocity : LREAL;
+    AuxTC_Busy : BOOL;
+    AuxTC_Active : BOOL;
+    AuxTC_CA : BOOL;
+    AuxTC_Error : BOOL;
+    AuxTC_ErrorID : WORD;
+    AuxTC_InTorque : BOOL;
+    AuxCamIn : BOOL;
+    GearStsOK : BOOL;
+    GearMoveSpindle : BOOL;
+    GearMoveFuso : BOOL;
+    GearStartIn : BOOL;
+    fbMCMoveGFuso : MC_Move;
+    GearFusoPos : LREAL;
+    GearFusoVel : LREAL;
+    GearFusoAcc : LREAL;
+    GearFusoDec : LREAL;
+    fbGearFusoBusy : BOOL;
+    fbGearFusoActive : BOOL;
+    fbGearFusoDone : BOOL;
+    fbMCMoveGSpindle : MC_MoveVelocity;
+    GearSpindleVel : LREAL;
+    GearSpindleAcc : LREAL;
+    GearSpindleDec : LREAL;
+    fbMCGearIN : MC_GearIn2;
+    GearInNum : DINT;
+    GearInDen : UDINT;
+    GearInAcc : LREAL;
+    GearInDec : LREAL;
+    fbGearSpindleInVel : BOOL;
+    fbMCStopSpindle : MC_Stop;
+    fbGearInGear : BOOL;
+    fbGearInBusy : BOOL;
+    fbGearInActive : BOOL;
+    fbGearInComAbrt : BOOL;
+    fbGearInError : BOOL;
+    fbGearInErrorID : WORD;
+    GearStartOut : BOOL;
+    fbMCGearOut : MC_GearOut;
+    GearFusoPosOut : LREAL;
+    GearStartInPos : BOOL;
+    fbMCGearINPos : MC_GearInPos2;
+    GearInMasterPos : LREAL;
+    GearInSlavePos : LREAL;
+    GearInVel : LREAL;
+    fbGearInPosGear : BOOL;
+    fbGearInPosStartSync : BOOL;
+    fbGearInPosInSync : BOOL;
+    fbGearInPosBusy : BOOL;
+    fbGearInPosActive : BOOL;
+    fbGearInPosComAbrt : BOOL;
+    fbGearInPosError : BOOL;
+    fbGearInPosErrorId : WORD;
+    GearStartInPosAux : BOOL;
+    RoscaStart : BOOL;
+    PassoRosca : INT;
+    ContNPassos : INT;
+    QtdPassosRosca : INT;
+    GearFusoJerk : LREAL;
+    GearSpindleJerk : LREAL;
+    GearInJerk : LREAL;
+END_VAR
+END_INTERFACE
+MODULE NX
+TYPE
+ _dummy4 : (_dummydummy4 := 4);
+END_TYPE
+END_MODULE
+

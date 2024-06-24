@@ -1,0 +1,115 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=BOOL	N=InitEixosOK	G=VAR
+++D=BOOL	N=Eixo00OK	G=VAR	Com=Eixo em condições de habilitar
+++D=MC_Power	N=fbMCPowerEixo00	G=VAR
+++D=MC_Reset	N=fbMCResetEixo00	G=VAR
+++D=MC_Home	N=fbMCHomeEixo00	G=VAR
+++D=BOOL	N=AuxJogPos0	G=VAR
+++D=BOOL	N=AuxJogNeg0	G=VAR
+++D=MC_MoveJog	N=fbMCJogEixo00	G=VAR
+++D=MC_Move	N=fbMCMoveEixo00	G=VAR
+++D=MC_Move	N=fbMCMoveEixo00Absolute	G=VAR
+++D=MC_Move	N=fbMCMoveEixo00Relative	G=VAR
+++D=BOOL	N=TestSafetyOK	G=VAR
+++D=STRING[256]	N=StrErroServo01	G=VAR
+++D=MC_MoveVelocity	N=fbMCMoveEixo00Velcity	G=VAR
+++D=MC_Stop	N=fbMCStopEixo00	G=VAR
+++D=REAL	N=AuxMoveSpeed0	G=VAR
+++D=BOOL	N=AuxMoveChangeSpeed0	G=VAR
+++D=TON	N=DelayChangeSpeed0	G=VAR
+++D=BOOL	N=Eixo01OK	G=VAR	Com=Eixo em condições de habilitar
+++D=MC_Power	N=fbMCPowerEixo01	G=VAR
+++D=MC_Reset	N=fbMCResetEixo01	G=VAR
+++D=MC_Home	N=fbMCHomeEixo01	G=VAR
+++D=STRING[256]	N=StrErroServo02	G=VAR
+++D=MC_Move	N=fbMCMoveEixo01	G=VAR
+++D=MC_Move	N=fbMCMoveEixo01Absolute	G=VAR
+++D=MC_Move	N=fbMCMoveEixo01Relative	G=VAR
+++D=BOOL	N=AuxMoveChangeSpeed1	G=VAR
+++D=MC_MoveVelocity	N=fbMCMoveEixo01Velcity	G=VAR
+++D=REAL	N=AuxMoveSpeed1	G=VAR
+++D=TON	N=DelayChangeSpeed1	G=VAR
+++D=MC_Stop	N=fbMCStopEixo01	G=VAR
+++D=BOOL	N=AuxJogPos1	G=VAR
+++D=BOOL	N=AuxJogNeg1	G=VAR
+++D=MC_MoveJog	N=fbMCJogEixo01	G=VAR
+++D=BOOL	N=AuxMoveTorq	G=VAR
+++D=MC_TorqueControl	N=fbMCToqueCtrlEixo0	G=VAR
+++D=LREAL	N=AuxTC_Torque	G=VAR
+++D=LREAL	N=AuxTC_TRamp	G=VAR
+++D=LREAL	N=AuxTC_Velocity	G=VAR
+++D=BOOL	N=AuxTC_Busy	G=VAR
+++D=BOOL	N=AuxTC_Active	G=VAR
+++D=BOOL	N=AuxTC_CA	G=VAR
+++D=BOOL	N=AuxTC_Error	G=VAR
+++D=WORD	N=AuxTC_ErrorID	G=VAR
+++D=BOOL	N=AuxTC_InTorque	G=VAR
+++D=BOOL	N=AuxCamIn	G=VAR	Com=Habilta came
+++D=BOOL	N=GearStsOK	G=VAR	Com=Pronto para realizar gear
+++D=BOOL	N=GearMoveSpindle	G=VAR	Com=mover spindle para a posição
+++D=BOOL	N=GearMoveFuso	G=VAR	Com=Mover fuso para a posição
+++D=BOOL	N=GearStartIn	G=VAR	Com=Start gear in
+++D=MC_Move	N=fbMCMoveGFuso	G=VAR
+++D=LREAL	N=GearFusoPos	G=VAR
+++D=LREAL	N=GearFusoVel	G=VAR
+++D=LREAL	N=GearFusoAcc	G=VAR
+++D=LREAL	N=GearFusoDec	G=VAR
+++D=BOOL	N=fbGearFusoBusy	G=VAR
+++D=BOOL	N=fbGearFusoActive	G=VAR
+++D=BOOL	N=fbGearFusoDone	G=VAR
+++D=MC_MoveVelocity	N=fbMCMoveGSpindle	G=VAR
+++D=LREAL	N=GearSpindleVel	G=VAR
+++D=LREAL	N=GearSpindleAcc	G=VAR
+++D=LREAL	N=GearSpindleDec	G=VAR
+++D=MC_GearIn	N=fbMCGearIN	G=VAR
+++D=DINT	N=GearInNum	G=VAR
+++D=UDINT	N=GearInDen	G=VAR
+++D=LREAL	N=GearInAcc	G=VAR
+++D=LREAL	N=GearInDec	G=VAR
+++D=BOOL	N=fbGearSpindleInVel	G=VAR
+++D=MC_Stop	N=fbMCStopSpindle	G=VAR
+++D=BOOL	N=fbGearInGear	G=VAR
+++D=BOOL	N=fbGearInBusy	G=VAR
+++D=BOOL	N=fbGearInActive	G=VAR
+++D=BOOL	N=fbGearInComAbrt	G=VAR
+++D=BOOL	N=fbGearInError	G=VAR
+++D=WORD	N=fbGearInErrorID	G=VAR
+++D=BOOL	N=GearStartOut	G=VAR
+++D=MC_GearOut	N=fbMCGearOut	G=VAR
+++D=LREAL	N=GearFusoPosOut	G=VAR
+++D=BOOL	N=GearStartInPos	G=VAR
+++D=MC_GearInPos	N=fbMCGearINPos	G=VAR
+++D=LREAL	N=GearInMasterPos	G=VAR
+++D=LREAL	N=GearInSlavePos	G=VAR
+++D=LREAL	N=GearInVel	G=VAR
+++D=BOOL	N=fbGearInPosGear	G=VAR
+++D=BOOL	N=fbGearInPosStartSync	G=VAR
+++D=BOOL	N=fbGearInPosInSync	G=VAR
+++D=BOOL	N=fbGearInPosBusy	G=VAR
+++D=BOOL	N=fbGearInPosActive	G=VAR
+++D=BOOL	N=fbGearInPosComAbrt	G=VAR
+++D=BOOL	N=fbGearInPosError	G=VAR
+++D=WORD	N=fbGearInPosErrorId	G=VAR
+++D=BOOL	N=GearStartInPosAux	G=VAR
+++D=BOOL	N=RoscaStart	G=VAR
+++D=INT	N=PassoRosca	G=VAR
+++D=INT	N=ContNPassos	G=VAR
+++D=INT	N=QtdPassosRosca	G=VAR
+++D=LREAL	N=GearFusoJerk	G=VAR
+++D=LREAL	N=GearSpindleJerk	G=VAR
+++D=LREAL	N=GearInJerk	G=VAR
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
+++D=MyAxis	N=VARsEixo00	G=VAR_EXTERNAL
+++D=BOOL	N=SFTEmergenciaOK	G=VAR_EXTERNAL
+++D=BOOL	N=SFTCartoesOK	G=VAR_EXTERNAL
+++D=_sAXIS_REF	N=MC_Axis000	Const=1	G=VAR_EXTERNAL
+++D=BOOL	N=IHMHabilitaJog0	G=VAR_EXTERNAL	Com=Habilita Jog pela IHM
+++D=ARRAY[0..15] OF _sAXIS_REF	N=_MC_AX	Const=1	G=VAR_EXTERNAL
+++D=MoveParameter	N=IHMMoveParameter	G=VAR_EXTERNAL
+++D=BOOL	N=IHMMoveEixo0	G=VAR_EXTERNAL
+++D=_sAXIS_REF	N=MC_Axis001	Const=1	G=VAR_EXTERNAL
+++D=MyAxis	N=VARsEixo01	G=VAR_EXTERNAL
+++D=BOOL	N=IHMMoveEixo1	G=VAR_EXTERNAL
+++D=BOOL	N=IHMHabilitaJog1	G=VAR_EXTERNAL	Com=Habilita Jog pela IHM

@@ -1,0 +1,23 @@
+MODULE NX END_MODULE {USING<\\NX>}
+MODULE OmronLib
+    MODULE MC_CmdTbl
+        MODULE SubParts
+
+FUNCTION {a<_n_o_t_d_i_v_i_d_e_d_!_>} ChkInitialCond : BOOL
+    VAR_IN_OUT CONSTANT
+        AxesGroup : _sGROUP_REF;
+        MemData : \\OmronLib\MC_CmdTbl\sCMD_DATA;
+    END_VAR
+    VAR_IN_OUT
+        TskAttr : \\OmronLib\MC_CmdTbl\SubParts\sTSK_ATTR;
+    END_VAR
+    VAR_OUTPUT
+        Error : BOOL;
+        ErrorID : WORD;
+        ErrorIDEx : DWORD;
+    END_VAR
+END_FUNCTION
+        END_MODULE
+    END_MODULE
+END_MODULE
+

@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<data>
+  <data>
+    <ReferredLibrariesModel>
+      <ReferredLibraries>
+        <ReferredLibrary>
+          <data>
+            <LibraryModel>
+              <Name>OmronLib_MC_CmdTbl_V1_1</Name>
+              <NameSpace></NameSpace>
+              <Version>1.1.0</Version>
+              <Revision>1</Revision>
+              <LibraryId>69495885-e7c0-45db-949a-2ab65372e70c</LibraryId>
+              <Author>OMRON Corporation</Author>
+              <Company>(c) OMRON Corporation 2015. All Rights Reserved.</Company>
+              <DateCreated>2015-08-10T00:48:25.7863818-03:00</DateCreated>
+              <DateModified>2015-10-22T00:42:32.7519003-02:00</DateModified>
+              <Comment>This is MC CmdTbl library.
+これはモーション制御コマンドテーブルライブラリです。</Comment>
+              <Password></Password>
+              <AttachedFiles />
+              <AttachedFilesRelativePaths />
+              <PublicPartsNames>
+                <PublicName>OmronLib\MC_CmdTbl\MCCmdTbl</PublicName>
+                <PublicName>OmronLib\MC_CmdTbl\sCMD_PARA_PROFILE</PublicName>
+                <PublicName>OmronLib\MC_CmdTbl\sCMD_PARA_TSK</PublicName>
+                <PublicName>OmronLib\MC_CmdTbl\sCMD_PARA_AXIS</PublicName>
+                <PublicName>OmronLib\MC_CmdTbl\sCMD_PARA</PublicName>
+                <PublicName>OmronLib\MC_CmdTbl\sSEQ_DATA_PARA</PublicName>
+                <PublicName>OmronLib\MC_CmdTbl\sSEQ_DATA</PublicName>
+                <PublicName>OmronLib\MC_CmdTbl\sCMD_DATA</PublicName>
+              </PublicPartsNames>
+              <InternalPartsNames>
+                <InternalName>OmronLib\MC_CmdTbl\SubParts\GetAccDecRatio</InternalName>
+                <InternalName>OmronLib\MC_CmdTbl\SubParts\GetAxisCmdPos</InternalName>
+                <InternalName>OmronLib\MC_CmdTbl\SubParts\GetAxisPTPCmdData</InternalName>
+                <InternalName>OmronLib\MC_CmdTbl\SubParts\GetMoveCircularCmdData</InternalName>
+                <InternalName>OmronLib\MC_CmdTbl\SubParts\GetMoveLinearCmdData</InternalName>
+                <InternalName>OmronLib\MC_CmdTbl\SubParts\ChkCmdOutput</InternalName>
+                <InternalName>OmronLib\MC_CmdTbl\SubParts\CmdNOP</InternalName>
+                <InternalName>OmronLib\MC_CmdTbl\SubParts\CmdEnd</InternalName>
+                <InternalName>OmronLib\MC_CmdTbl\SubParts\ChkInitialCond</InternalName>
+                <InternalName>OmronLib\MC_CmdTbl\SubParts\ChkAxesCond</InternalName>
+                <InternalName>OmronLib\MC_CmdTbl\SubParts\ChkSeqNo</InternalName>
+                <InternalName>OmronLib\MC_CmdTbl\SubParts\CalcRoundPosition</InternalName>
+                <InternalName>OmronLib\MC_CmdTbl\SubParts\SetCmdOutputIF</InternalName>
+                <InternalName>OmronLib\MC_CmdTbl\SubParts\CmdMoveLinear</InternalName>
+                <InternalName>OmronLib\MC_CmdTbl\SubParts\CmdMoveCircular</InternalName>
+                <InternalName>OmronLib\MC_CmdTbl\SubParts\CmdMultiAxesPTP</InternalName>
+                <InternalName>OmronLib\MC_CmdTbl\SubParts\AxisCtrl</InternalName>
+                <InternalName>OmronLib\MC_CmdTbl\SubParts\Interpreter</InternalName>
+                <InternalName>OmronLib\MC_CmdTbl\SubParts\sTSK_CMD_IF</InternalName>
+                <InternalName>OmronLib\MC_CmdTbl\SubParts\sTSK_STS_IF</InternalName>
+                <InternalName>OmronLib\MC_CmdTbl\SubParts\sCMD_OUT</InternalName>
+                <InternalName>OmronLib\MC_CmdTbl\SubParts\sTSK_ATTR</InternalName>
+                <InternalName>OmronLib\MC_CmdTbl\SubParts\sREAD_AHEAD</InternalName>
+                <InternalName>OmronLib\MC_CmdTbl\SubParts\sCMD_MOVELINE_IN</InternalName>
+                <InternalName>OmronLib\MC_CmdTbl\SubParts\sCMD_MOVELINE_OUT</InternalName>
+                <InternalName>OmronLib\MC_CmdTbl\SubParts\sCMD_PTP_IN</InternalName>
+                <InternalName>OmronLib\MC_CmdTbl\SubParts\sCMD_PTP_OUT</InternalName>
+                <InternalName>OmronLib\MC_CmdTbl\SubParts\sCMD_MOVECIR_IN</InternalName>
+                <InternalName>OmronLib\MC_CmdTbl\SubParts\sCMD_MOVECIR_OUT</InternalName>
+              </InternalPartsNames>
+              <BuildDevice>
+                <Category>Controller</Category>
+                <Family>Nex</Family>
+                <FullModel>NJ301-1100</FullModel>
+                <MajorVersion>1</MajorVersion>
+                <MinorVersion>10</MinorVersion>
+                <Revision>0</Revision>
+                <DisplayVersion>1.10</DisplayVersion>
+                <Packages>
+                  <Package Name="Motion" Version="1.10" />
+                </Packages>
+              </BuildDevice>
+              <DependencyId>30a97c56-afd4-45b4-b28d-b4d68481edfc</DependencyId>
+              <IsSource>true</IsSource>
+              <IsDisableSourceDisplay>true</IsDisableSourceDisplay>
+              <IsIncludeReferredLibraries>false</IsIncludeReferredLibraries>
+              <LibraryFilePath>C:\OMRON\Data\Lib\MC_CmdTbl\OmronLib_MC_CmdTbl_V1_1.slr</LibraryFilePath>
+              <LibraryFileRelativePath></LibraryFileRelativePath>
+              <LibrarySourceControlRelativeFilePath></LibrarySourceControlRelativeFilePath>
+              <AsOldVer>false</AsOldVer>
+              <SchemaVersion>3</SchemaVersion>
+              <Parameter1>true</Parameter1>
+            </LibraryModel>
+          </data>
+        </ReferredLibrary>
+      </ReferredLibraries>
+      <BuildOption>
+        <data>
+          <LibraryModel>
+            <Name>Demo_Maleta_control</Name>
+            <NameSpace></NameSpace>
+            <Version>1.0.0</Version>
+            <Revision>1</Revision>
+            <LibraryId>00000000-0000-0000-0000-000000000000</LibraryId>
+            <Author>RodrigoFreire</Author>
+            <Company></Company>
+            <DateCreated>2023-09-20T11:15:10.6451175-03:00</DateCreated>
+            <DateModified>2023-09-20T11:15:10.6451175-03:00</DateModified>
+            <Comment></Comment>
+            <Password></Password>
+            <AttachedFiles />
+            <AttachedFilesRelativePaths />
+            <PublicPartsNames />
+            <InternalPartsNames />
+            <BuildDevice>
+              <Category></Category>
+              <Family></Family>
+              <FullModel></FullModel>
+              <MajorVersion>0</MajorVersion>
+              <MinorVersion>0</MinorVersion>
+              <Revision>0</Revision>
+              <DisplayVersion></DisplayVersion>
+              <Packages />
+            </BuildDevice>
+            <DependencyId>00000000-0000-0000-0000-000000000000</DependencyId>
+            <IsSource>false</IsSource>
+            <IsDisableSourceDisplay>true</IsDisableSourceDisplay>
+            <IsIncludeReferredLibraries>false</IsIncludeReferredLibraries>
+            <LibraryFilePath></LibraryFilePath>
+            <LibraryFileRelativePath></LibraryFileRelativePath>
+            <LibrarySourceControlRelativeFilePath></LibrarySourceControlRelativeFilePath>
+            <AsOldVer>false</AsOldVer>
+            <SchemaVersion>0</SchemaVersion>
+            <Parameter1>false</Parameter1>
+          </LibraryModel>
+        </data>
+      </BuildOption>
+      <ExcludedParts />
+      <InternalParts />
+      <LibraryTrackingIdConversionTable>
+        <LibraryEntityTrackingId>00000000-0000-0000-0000-000000000000</LibraryEntityTrackingId>
+        <PartTrackingIds />
+      </LibraryTrackingIdConversionTable>
+      <AreLibrariesIncluded>true</AreLibrariesIncluded>
+      <IsLibraryIdsDifferenceNotified>false</IsLibraryIdsDifferenceNotified>
+    </ReferredLibrariesModel>
+  </data>
+</data>

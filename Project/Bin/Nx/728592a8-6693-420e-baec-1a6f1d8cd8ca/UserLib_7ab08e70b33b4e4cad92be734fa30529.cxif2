@@ -1,0 +1,30 @@
+MODULE NX END_MODULE {USING<\\NX>}
+MODULE OmronLib
+    MODULE MC_CmdTbl
+        MODULE SubParts
+
+FUNCTION_BLOCK {a<_n_o_t_d_i_v_i_d_e_d_!_>} CmdMultiAxesPTP
+    VAR_INPUT CONSTANT
+        Execute : BOOL;
+    END_VAR
+    VAR_INPUT
+        Stop : BOOL;
+        MCodeReset : BOOL;
+    END_VAR
+    VAR_INPUT CONSTANT
+        SeqNo : UINT;
+    END_VAR
+    VAR_IN_OUT
+        TskAttr : \\OmronLib\MC_CmdTbl\SubParts\sTSK_ATTR;
+    END_VAR
+    VAR_IN_OUT CONSTANT
+        MemData : \\OmronLib\MC_CmdTbl\sCMD_DATA;
+    END_VAR
+    VAR_IN_OUT
+        OutputIF : \\OmronLib\MC_CmdTbl\SubParts\sCMD_OUT;
+    END_VAR
+END_FUNCTION_BLOCK
+        END_MODULE
+    END_MODULE
+END_MODULE
+

@@ -1,0 +1,14 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=LREAL	N=TmpLREAL	G=VAR	Com=目標位置
+++D=WORD	N=TmpWORD	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=EN	Ord=0	RO=1	G=VAR_INPUT
+++D=UINT	N=AxisNo	Ord=1	Const=1	G=VAR_INPUT	Com=軸No
+++D=OmronLib\MC_CmdTbl\SubParts\sTSK_ATTR	N=TskAttr	Ord=2	G=VAR_IN_OUT	Com=タスク属性
+++D=OmronLib\MC_CmdTbl\sSEQ_DATA	N=SeqData	Ord=3	Const=1	G=VAR_IN_OUT	Com=位置決めデータ
+++D=_eMC_MOVE_MODE	N=MoveMode	Ord=4	G=VAR_OUTPUT	Com=動作モード
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
++GN=RETURN	GA=Return	GVT=ReturnGroup
+++D=LREAL	N=GetAxisCmdPos	G=RETURN	Com=目標位置

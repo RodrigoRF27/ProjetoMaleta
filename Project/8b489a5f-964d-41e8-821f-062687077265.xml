@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<data>
+  <GeneralSettingsData TaskExecutionCondition="2000" ExecutionPriority="4" CycleTimeOverDetection="Warning" TimeOutValue="10000" VariableAccessTimeRatio="3">
+    <ExecutionConditionVariable VariableName="" Condition="" Constant="" />
+    <ExecutionConditionCJUnit ExternalInputUnit="">
+      <ExecutionConditionInterruptionUnit UnitNumber="" InputContact="" EdgeDetection="" />
+      <ExecutionConditionSiouCpuUnit CJUnitTaskNo="" />
+    </ExecutionConditionCJUnit>
+  </GeneralSettingsData>
+  <Programs>
+    <AssociatedProgramData ProgramName="Geral" InstanceName="Geral" IniFileTrackingId="b395b7b487b74b9eb6576ce54ec65183" StartupSetting="TRUE" SequenceNumber="1" IsDebugProgram="false" />
+    <AssociatedProgramData ProgramName="Motion" InstanceName="Motion" IniFileTrackingId="d943e6deb3294395b3c5f2899e148bfe" StartupSetting="TRUE" SequenceNumber="2" IsDebugProgram="false" />
+    <AssociatedProgramData ProgramName="DBConnection" InstanceName="DBConnection" IniFileTrackingId="ae3469bf31c24c3baa9349de88190a11" StartupSetting="TRUE" SequenceNumber="3" IsDebugProgram="false" />
+  </Programs>
+  <RefreshUnitIds>
+    <RefreshUnitId RefreshUnitId="0d90e5b8-7b9f-4d18-86c7-c53ab2ead56e" />
+    <RefreshUnitId RefreshUnitId="782cd816-b204-4572-bfdc-af382e3ab2dc" />
+  </RefreshUnitIds>
+  <TaskInterfaceVariables version="1" />
+</data>

@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<data>
+  <MappedVariableIds>
+    <MappedVariableId PortId="006cbf24-3a56-44f3-ba57-a64703c77e42">
+      <MappedVariable VariableId="fdd043c9-7c37-471b-941e-15daf0ddabbf" />
+    </MappedVariableId>
+    <MappedVariableId PortId="00b407a2-ecd1-4379-a650-f8f62968c129">
+      <MappedVariable VariableId="215eb25f-cbca-488f-9ad8-5af136cdd159" />
+    </MappedVariableId>
+    <MappedVariableId PortId="1b1ab76e-6077-493d-880b-c872d2455648">
+      <MappedVariable VariableId="604b37db-faef-468a-98be-dd67bbad0327" />
+    </MappedVariableId>
+    <MappedVariableId PortId="2036f887-24b8-4869-a22e-5195451e4a47">
+      <MappedVariable VariableId="77807376-1fbc-4489-8e8f-0e94223dbff4" />
+    </MappedVariableId>
+    <MappedVariableId PortId="2195e446-8c6a-4f09-bb1f-afbc6fdcd85d">
+      <MappedVariable VariableId="f30e2c61-d879-4c1b-be75-a67b14ea4b7b" />
+    </MappedVariableId>
+    <MappedVariableId PortId="25a024c8-c695-47df-87e9-adad9efb708d">
+      <MappedVariable VariableId="1ed6b6ec-fc25-42e9-ab35-c9b91d806c8e" />
+    </MappedVariableId>
+    <MappedVariableId PortId="3543e112-4541-4ced-b54a-d7098eef1d08">
+      <MappedVariable VariableId="59eba9dc-c124-4070-98ab-d3a92c993430" />
+    </MappedVariableId>
+    <MappedVariableId PortId="43cca6ed-b218-438c-9ae5-60cef81fd10d">
+      <MappedVariable VariableId="df048f08-a718-4ac9-816a-df413c161735" />
+    </MappedVariableId>
+    <MappedVariableId PortId="47e1334d-6669-4c7d-8fc4-167c8058623f">
+      <MappedVariable VariableId="ffcdf1be-db2d-4b81-9ceb-b75e290ba202" />
+    </MappedVariableId>
+    <MappedVariableId PortId="49986c64-8455-4853-9857-7873e6e59a87">
+      <MappedVariable VariableId="131eb828-14d5-4464-a766-69a60418a507" />
+    </MappedVariableId>
+    <MappedVariableId PortId="61de59bc-09ce-4817-9d1e-b98bf2abfd06">
+      <MappedVariable VariableId="fc2d26ef-2ad3-4bbb-a388-c0d89cf9f49b" />
+    </MappedVariableId>
+    <MappedVariableId PortId="63c0f6c7-6e3b-4eab-a616-c5eb28a75b84">
+      <MappedVariable VariableId="83a3c8ae-4516-4ae7-bc79-235f19268979" />
+    </MappedVariableId>
+    <MappedVariableId PortId="63d18301-9868-4989-b4fd-488076b5e419">
+      <MappedVariable VariableId="ffd4cc04-5a0b-461e-9326-e75be4fa0b90" />
+    </MappedVariableId>
+    <MappedVariableId PortId="8659603e-ec87-4ed1-90cc-6d5c652b0e91">
+      <MappedVariable VariableId="52315c22-fb47-4a23-8084-77f5bff145e3" />
+    </MappedVariableId>
+    <MappedVariableId PortId="91e7ecd7-a808-4cfa-acc2-128e5e136c20">
+      <MappedVariable VariableId="74f3e41a-62b0-4a58-be4a-83c573de41a1" />
+    </MappedVariableId>
+    <MappedVariableId PortId="b18bcf15-a06e-463d-b6cb-1db5c9065fcb">
+      <MappedVariable VariableId="990876a7-f0b7-4ca5-b824-45ea1f431746" />
+    </MappedVariableId>
+    <MappedVariableId PortId="bcea1337-2ebf-4202-b355-4536d4e4b1a8">
+      <MappedVariable VariableId="8413545a-23ea-45b1-b418-05397152cf52" />
+    </MappedVariableId>
+    <MappedVariableId PortId="c4ca1c05-b1e6-4fb7-8964-cbc81d1b78fa">
+      <MappedVariable VariableId="c8fbdb67-387b-456c-84cb-fc41881b014a" />
+    </MappedVariableId>
+    <MappedVariableId PortId="d7284a39-c642-4a0f-9fd7-0c722f50547e">
+      <MappedVariable VariableId="433fa1a5-8352-4a0e-b30e-fd4a18dd9563" />
+    </MappedVariableId>
+    <MappedVariableId PortId="f4f7c2bf-c2c3-4b03-a2ed-e0e2384b50db">
+      <MappedVariable VariableId="90fed543-051b-4eaa-93c0-3bdffce21691" />
+    </MappedVariableId>
+    <MappedVariableId PortId="f6a619cb-a74e-49a5-befa-5c0fc6b9516b">
+      <MappedVariable VariableId="0c408419-0957-4d68-84ce-67c70736aeed" />
+    </MappedVariableId>
+  </MappedVariableIds>
+  <VariableTableTrackingIds>
+    <VariableTableTrackingId VariableId="0c408419-0957-4d68-84ce-67c70736aeed" VariableTableTrackingId="b136549a-4345-417d-a8bd-46ffbcb92fad" />
+    <VariableTableTrackingId VariableId="131eb828-14d5-4464-a766-69a60418a507" VariableTableTrackingId="b136549a-4345-417d-a8bd-46ffbcb92fad" />
+    <VariableTableTrackingId VariableId="1ed6b6ec-fc25-42e9-ab35-c9b91d806c8e" VariableTableTrackingId="b136549a-4345-417d-a8bd-46ffbcb92fad" />
+    <VariableTableTrackingId VariableId="215eb25f-cbca-488f-9ad8-5af136cdd159" VariableTableTrackingId="b136549a-4345-417d-a8bd-46ffbcb92fad" />
+    <VariableTableTrackingId VariableId="433fa1a5-8352-4a0e-b30e-fd4a18dd9563" VariableTableTrackingId="b136549a-4345-417d-a8bd-46ffbcb92fad" />
+    <VariableTableTrackingId VariableId="52315c22-fb47-4a23-8084-77f5bff145e3" VariableTableTrackingId="b136549a-4345-417d-a8bd-46ffbcb92fad" />
+    <VariableTableTrackingId VariableId="59eba9dc-c124-4070-98ab-d3a92c993430" VariableTableTrackingId="b136549a-4345-417d-a8bd-46ffbcb92fad" />
+    <VariableTableTrackingId VariableId="604b37db-faef-468a-98be-dd67bbad0327" VariableTableTrackingId="b136549a-4345-417d-a8bd-46ffbcb92fad" />
+    <VariableTableTrackingId VariableId="74f3e41a-62b0-4a58-be4a-83c573de41a1" VariableTableTrackingId="b136549a-4345-417d-a8bd-46ffbcb92fad" />
+    <VariableTableTrackingId VariableId="77807376-1fbc-4489-8e8f-0e94223dbff4" VariableTableTrackingId="b136549a-4345-417d-a8bd-46ffbcb92fad" />
+    <VariableTableTrackingId VariableId="83a3c8ae-4516-4ae7-bc79-235f19268979" VariableTableTrackingId="b136549a-4345-417d-a8bd-46ffbcb92fad" />
+    <VariableTableTrackingId VariableId="8413545a-23ea-45b1-b418-05397152cf52" VariableTableTrackingId="b136549a-4345-417d-a8bd-46ffbcb92fad" />
+    <VariableTableTrackingId VariableId="90fed543-051b-4eaa-93c0-3bdffce21691" VariableTableTrackingId="b136549a-4345-417d-a8bd-46ffbcb92fad" />
+    <VariableTableTrackingId VariableId="990876a7-f0b7-4ca5-b824-45ea1f431746" VariableTableTrackingId="b136549a-4345-417d-a8bd-46ffbcb92fad" />
+    <VariableTableTrackingId VariableId="c8fbdb67-387b-456c-84cb-fc41881b014a" VariableTableTrackingId="b136549a-4345-417d-a8bd-46ffbcb92fad" />
+    <VariableTableTrackingId VariableId="df048f08-a718-4ac9-816a-df413c161735" VariableTableTrackingId="b136549a-4345-417d-a8bd-46ffbcb92fad" />
+    <VariableTableTrackingId VariableId="f30e2c61-d879-4c1b-be75-a67b14ea4b7b" VariableTableTrackingId="b136549a-4345-417d-a8bd-46ffbcb92fad" />
+    <VariableTableTrackingId VariableId="fc2d26ef-2ad3-4bbb-a388-c0d89cf9f49b" VariableTableTrackingId="b136549a-4345-417d-a8bd-46ffbcb92fad" />
+    <VariableTableTrackingId VariableId="fdd043c9-7c37-471b-941e-15daf0ddabbf" VariableTableTrackingId="b136549a-4345-417d-a8bd-46ffbcb92fad" />
+    <VariableTableTrackingId VariableId="ffcdf1be-db2d-4b81-9ceb-b75e290ba202" VariableTableTrackingId="b136549a-4345-417d-a8bd-46ffbcb92fad" />
+    <VariableTableTrackingId VariableId="ffd4cc04-5a0b-461e-9326-e75be4fa0b90" VariableTableTrackingId="b136549a-4345-417d-a8bd-46ffbcb92fad" />
+  </VariableTableTrackingIds>
+</data>

@@ -1,0 +1,63 @@
+{IMPORT<ULs.cxip>}
+MODULE NX END_MODULE {USING<\\NX>}
+INTERFACE LV_f0839dc1efbc4f07906fba7f9511f919
+VAR
+    _dmmy : BOOL;
+END_VAR
+__VAR_SYSTEM CONSTANT
+    P_On : BOOL;
+    P_Off : BOOL;
+    P_CY : BOOL;
+    P_First_RunMode : BOOL;
+    P_First_Run : BOOL;
+__END_VAR
+__VAR_SYSTEM
+    P_PRGER : BOOL;
+__END_VAR
+VAR
+ _Diff_165d6420da6d4e6eae72e09658ee1b76: BOOL := TRUE;
+ _Diff_1e92b76302b74289b51e8a5000000016: BOOL := TRUE;
+ _Diff_1e92b76302b74289b51e8a5000000017: BOOL := TRUE;
+ _Diff_1e92b76302b74289b51e8a5000000032: BOOL := TRUE;
+ _Diff_1e92b76302b74289b51e8a500000003e: BOOL := TRUE;
+ _Diff_a8eb4cddee5e4f55936f8aeb5ff4a1b7: BOOL := TRUE;
+ _tmpRslt_STRING1986: STRING[1986] {N<D>};
+END_VAR
+VAR_EXTERNAL
+    Reset : BOOL;
+    Availability : LREAL;
+    TotalProduction : UDINT;
+    TotalProductionNG : UDINT;
+    Quality : LREAL;
+    Performance : LREAL;
+    OEE : LREAL;
+END_VAR
+VAR
+    Start : BOOL;
+    Timer_Start : TON;
+    StopStatus : BOOL;
+    RandomValue : LREAL;
+    RandomFailure : Rand;
+    ErrorStop : BOOL;
+    OtherStop : BOOL;
+    Velocity : LREAL;
+    TimeInStop : TIME;
+    Timer_Stop : TON;
+    ulTimeInStop : ULINT;
+    accTime : TIME;
+    accTimeInStop : TIME;
+    TimeALL : AccumulationTimer;
+    TimeStopCounter : AccumulationTimer;
+    ElapsedTime : LREAL;
+    TactTime : INT;
+    EndOfProduct : BOOL;
+    AuxMaqLigada : BOOL;
+    UpEndOfProduct : BOOL;
+END_VAR
+END_INTERFACE
+MODULE NX
+TYPE
+ _dummy4 : (_dummydummy4 := 4);
+END_TYPE
+END_MODULE
+

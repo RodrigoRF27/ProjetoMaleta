@@ -1,0 +1,59 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=BOOL	N=OldEnable	G=VAR
+++D=R_TRIG	N=ExeUpTrig	G=VAR
+++D=R_TRIG	N=ErrUpTrig	G=VAR
+++D=BOOL	N=SeqNoSetUpTrig	G=VAR
+++D=BOOL	N=SeqChkError	G=VAR
+++D=BOOL	N=ChkInitialCondError	G=VAR
+++D=BOOL	N=ChkAxesCondError	G=VAR
+++D=BOOL	N=ErrOccurred	G=VAR
+++D=BOOL	N=UpExe	G=VAR
+++D=OmronLib\MC_CmdTbl\SubParts\sCMD_OUT	N=OutputIF	G=VAR
+++D=OmronLib\MC_CmdTbl\SubParts\sCMD_OUT	N=TmpOutputIF	G=VAR
+++D=BOOL	N=TmpAutoExe	G=VAR
+++D=BOOL	N=TmpBit	G=VAR
+++D=BOOL	N=TmpStepExe	G=VAR
+++D=BOOL	N=TmpStop	G=VAR
+++D=BOOL	N=TmpSeqNoSet	G=VAR
+++D=UINT	N=TmpSeqNo	G=VAR
+++D=BOOL	N=TmpMCodeReset	G=VAR
+++D=BOOL	N=TmpEnabled	G=VAR
+++D=BOOL	N=TmpTeachingDone	G=VAR
+++D=OmronLib\MC_CmdTbl\SubParts\Interpreter	N=InterpreterInst	G=VAR
+++D=OmronLib\MC_CmdTbl\SubParts\sTSK_ATTR	N=TskAttr	G=VAR
+++D=R_TRIG	N=DoneTrig	G=VAR
+++D=R_TRIG	N=CATrig	G=VAR
+++D=R_TRIG	N=ErrTrig	G=VAR
+++D=R_TRIG	N=TmpExeTrig	G=VAR
+++D=R_TRIG	N=SeqSetTrig	G=VAR
+++D=R_TRIG	N=MRsetTrig	G=VAR
+++D=BOOL	N=ErrOccurred_Error	G=VAR
+++D=WORD	N=ErrOccurred_ErrorID	G=VAR
+++D=DWORD	N=ErrOccurred_ErrorIDEx	G=VAR
+++D=BOOL	N=SeqChk	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=_sGROUP_REF	N=AxesGroup	Ord=0	Const=1	G=VAR_IN_OUT	Com=軸グループ
+++D=OmronLib\MC_CmdTbl\sCMD_DATA	N=CmdTbl	Ord=1	G=VAR_IN_OUT	Com=メモリ運転データ
+++D=BOOL	N=Enable	IV=False	Ord=2	G=VAR_INPUT	Com=タスク有効
+++D=BOOL	N=Execute	IV=False	Ord=3	G=VAR_INPUT	Com=運転開始
+++D=BOOL	N=StepMode	IV=False	Ord=4	G=VAR_INPUT	Com=FALSE（自動運転）／TRUE（手動運転）
+++D=BOOL	N=Stop	IV=False	Ord=5	G=VAR_INPUT	Com=停止実行
+++D=BOOL	N=SeqNoSet	IV=False	Ord=6	G=VAR_INPUT	Com=シーケンスNo.セット
+++D=UINT	N=SeqNo	IV=0	Ord=7	G=VAR_INPUT	Com=シーケンスNo.
+++D=BOOL	N=MCodeReset	IV=False	Ord=8	G=VAR_INPUT	Com=Mコードリセット
+++D=BOOL	N=Enabled	Ord=9	G=VAR_OUTPUT	Com=タスク有効中
+++D=BOOL	N=Done	Ord=10	G=VAR_OUTPUT	Com=メモリ運転完了
+++D=UINT	N=CurrentSeqNo	Ord=11	G=VAR_OUTPUT	Com=実行中シーケンスNo.
+++D=BOOL	N=MStrobe	Ord=12	G=VAR_OUTPUT	Com=Mストローブ中
+++D=UINT	N=MCode	Ord=13	G=VAR_OUTPUT	Com=Mコード
+++D=DWORD	N=DigitalOutputs	Ord=14	G=VAR_OUTPUT	Com=デジタル出力
+++D=BOOL	N=Busy	Ord=15	G=VAR_OUTPUT	Com=メモリ運転実行中
+++D=BOOL	N=CommandAborted	Ord=16	G=VAR_OUTPUT	Com=メモリ運転中断
+++D=BOOL	N=Error	Ord=17	G=VAR_OUTPUT	Com=メモリ運転エラー
+++D=WORD	N=ErrorID	Ord=18	G=VAR_OUTPUT	Com=エラーコード
+++D=DWORD	N=ErrorIDEx	Ord=19	G=VAR_OUTPUT	Com=拡張エラーコード
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
+++D=ARRAY[0..7] OF _sGROUP_REF	N=_MC_GRP	Const=1	G=VAR_EXTERNAL
+++D=ARRAY[0..15] OF _sAXIS_REF	N=_MC_AX	Const=1	G=VAR_EXTERNAL

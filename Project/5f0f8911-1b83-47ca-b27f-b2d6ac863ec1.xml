@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<data>
+  <DataType Name="データ型1" BaseType="" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="">
+    <DataType Name="sCMD_DATA" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="メモリ運転データ" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="26" OffsetType="NJ">
+      <DataType Name="Para" BaseType="OmronLib\MC_CmdTbl\sCMD_PARA" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="パラメータ" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="SeqData" BaseType="ARRAY[0..599] OF OmronLib\MC_CmdTbl\sSEQ_DATA" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="シーケンスデータ" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="sSEQ_DATA" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="シーケンスデータ" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="5" OffsetType="NJ">
+      <DataType Name="Cmd" BaseType="WORD" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="動作指令" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Ope" BaseType="UINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="運転パターン" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="SeqDataPara" BaseType="OmronLib\MC_CmdTbl\sSEQ_DATA_PARA" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="位置決めデータ" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="sSEQ_DATA_PARA" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="位置決めデータ" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="1" OffsetType="NJ">
+      <DataType Name="Axis" BaseType="ARRAY[0..3] OF SINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="軸指定" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Position" BaseType="ARRAY[0..3] OF LREAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="目標位置[unit]" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Velocity" BaseType="LREAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="補間速度[unit/s]" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="ProfileNo" BaseType="ARRAY[0..3] OF USINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="加減速プロファイルNo" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Aux" BaseType="ARRAY[0..1] OF LREAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="補助位置[unit]" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="DwellTime" BaseType="UINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="ドウェルタイム[ms]" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="MCode" BaseType="UINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Mコード" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="DigitalOutputs" BaseType="DWORD" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="デジタル出力" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="sCMD_PARA" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="パラメータ" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="6" OffsetType="NJ">
+      <DataType Name="TskPara" BaseType="OmronLib\MC_CmdTbl\sCMD_PARA_TSK" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="タスクパラメータ" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="AxisPara" BaseType="ARRAY[0..3] OF OmronLib\MC_CmdTbl\sCMD_PARA_AXIS" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="軸パラメータ" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="sCMD_PARA_AXIS" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="軸パラメータ" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="2" OffsetType="NJ">
+      <DataType Name="Profile" BaseType="ARRAY[0..3] OF OmronLib\MC_CmdTbl\sCMD_PARA_PROFILE" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="補間加減速プロファイル" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="sCMD_PARA_TSK" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="タスクパラメータ" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="3" OffsetType="NJ">
+      <DataType Name="Profile" BaseType="ARRAY[0..3] OF OmronLib\MC_CmdTbl\sCMD_PARA_PROFILE" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="補間加減速プロファイル" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="sCMD_PARA_PROFILE" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="タスクパラメータ" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="NJ">
+      <DataType Name="Velocity" BaseType="LREAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="指令速度[unit/s]" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="AccTime" BaseType="UINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="加速時間[ms]" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="DecTime" BaseType="UINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="減速時間[ms]" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="SCurve" BaseType="UINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="S字カーブ指定" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Dir" BaseType="UINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="動作方向" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+  </DataType>
+</data>

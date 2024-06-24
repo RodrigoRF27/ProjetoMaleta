@@ -1,0 +1,17 @@
+<Path Fill="#FF000000" Stroke="{x:Null}" StrokeThickness="1" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Height="641.407974243164" Width="641.207092285156">
+    <Path.Data>
+        <PathGeometry FillRule="EvenOdd">
+            <PathFigure StartPoint="320.5,0.7039794921875" IsClosed="True">
+                <LineSegment Point="640.5,320.703979492188"/>
+                <LineSegment Point="320.5,640.703979492188"/>
+                <LineSegment Point="263.5,584.703979492188"/>
+                <LineSegment Point="487.5,360.703979492188"/>
+                <LineSegment Point="0.5,360.703979492188"/>
+                <LineSegment Point="0.5,280.703979492188"/>
+                <LineSegment Point="487.5,280.703979492188"/>
+                <LineSegment Point="263.5,56.7039794921875"/>
+                <LineSegment Point="320.5,0.7039794921875"/>
+            </PathFigure>
+        </PathGeometry>
+    </Path.Data>
+</Path>

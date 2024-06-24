@@ -1,0 +1,28 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=ARRAY[0..3] OF MC_Move	N=MoveCmd	G=VAR
+++D=ARRAY[0..3] OF OmronLib\MC_CmdTbl\SubParts\sCMD_PTP_IN	N=PTPCmdIF	G=VAR
+++D=ARRAY[0..3] OF OmronLib\MC_CmdTbl\SubParts\sCMD_PTP_OUT	N=PTPStsIF	G=VAR
+++D=OmronLib\MC_CmdTbl\SubParts\SetCmdOutputIF	N=Destructor	G=VAR
+++D=UINT	N=Loop	G=VAR
+++D=UINT	N=LoopMax	G=VAR
+++D=BOOL	N=TmpDone	G=VAR
+++D=BOOL	N=TmpError	G=VAR
+++D=BOOL	N=TmpCA	G=VAR
+++D=BOOL	N=TmpExecute	G=VAR
+++D=UINT	N=DwellTime	G=VAR
+++D=UINT	N=MCode	G=VAR
+++D=UINT	N=Ope	G=VAR
+++D=DWORD	N=LibSerialNo	IV=16#00000000	Const=1	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=Execute	Ord=0	Const=1	G=VAR_INPUT	Com=実行
+++D=BOOL	N=Stop	Ord=1	G=VAR_INPUT	Com=停止
+++D=BOOL	N=MCodeReset	Ord=2	G=VAR_INPUT	Com=Mコードリセット
+++D=UINT	N=SeqNo	Ord=3	Const=1	G=VAR_INPUT	Com=シーケンスNo.
+++D=OmronLib\MC_CmdTbl\SubParts\sTSK_ATTR	N=TskAttr	Ord=4	G=VAR_IN_OUT	Com=タスク属性
+++D=OmronLib\MC_CmdTbl\sCMD_DATA	N=MemData	Ord=5	Const=1	G=VAR_IN_OUT	Com=メモリ運転データ
+++D=OmronLib\MC_CmdTbl\SubParts\sCMD_OUT	N=OutputIF	Ord=6	G=VAR_IN_OUT	Com=命令出力
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
+++D=ARRAY[0..15] OF _sAXIS_REF	N=_MC_AX	Const=1	G=VAR_EXTERNAL
+++D=ARRAY[0..7] OF _sGROUP_REF	N=_MC_GRP	Const=1	G=VAR_EXTERNAL

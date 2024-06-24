@@ -1,0 +1,18 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=UINT	N=Loop	G=VAR
+++D=UINT	N=LoopMax	G=VAR
+++D=UINT	N=SubLoop	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=EN	Ord=0	RO=1	G=VAR_INPUT
+++D=_sGROUP_REF	N=AxesGroup	Ord=1	Const=1	G=VAR_IN_OUT	Com=軸グループ
+++D=OmronLib\MC_CmdTbl\sCMD_DATA	N=MemData	Ord=2	Const=1	G=VAR_IN_OUT	Com=メモリ運転データ
+++D=OmronLib\MC_CmdTbl\SubParts\sTSK_ATTR	N=TskAttr	Ord=3	G=VAR_IN_OUT	Com=タスク属性
+++D=BOOL	N=Error	Ord=4	G=VAR_OUTPUT
+++D=WORD	N=ErrorID	Ord=5	G=VAR_OUTPUT
+++D=DWORD	N=ErrorIDEx	Ord=6	G=VAR_OUTPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
+++D=ARRAY[0..15] OF _sAXIS_REF	N=_MC_AX	Const=1	G=VAR_EXTERNAL
++GN=RETURN	GA=Return	GVT=ReturnGroup
+++D=BOOL	N=ChkInitialCond	G=RETURN

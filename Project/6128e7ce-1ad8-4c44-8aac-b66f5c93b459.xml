@@ -1,0 +1,39 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR_GLOBAL	GVT=GlobalNamespaceGroup
+++D=_sAXIS_REF	N=MC_Axis000	AT=MC://_MC_AX[0]	RO=1	Const=1	G=VAR_GLOBAL
+++D=BOOL	N=SFTEmergenciaOK	G=VAR_GLOBAL
+++D=BOOL	N=SFTCartoesOK	G=VAR_GLOBAL
+++D=UINT	N=SFTEmergenciaCode	G=VAR_GLOBAL
+++D=BOOL	N=SFTResetEmergencia	G=VAR_GLOBAL
+++D=BOOL	N=SFTResetFalha	G=VAR_GLOBAL
+++D=MyAxis	N=VARsEixo00	G=VAR_GLOBAL	EC=<ECs><EC EK="cmd.b_cmd_reset" C="Reset do eixo" /><EC EK="sts.b_sts_homed" C="Home realizado" /><EC EK="cmd.b_cmd_home" C="Realiza home" /><EC EK="cmd.b_cmd_jog_pos" C="Jog positivo" /><EC EK="sts.b_sts_enabled" C="Eixo energizado" /><EC EK="cmd.b_cmd_jog_neg" C="Jog negativo" /></ECs>
+++D=MyAxis	N=VARsEixo01	G=VAR_GLOBAL	EC=<ECs><EC EK="cmd.b_cmd_reset" C="Reset do eixo" /><EC EK="sts.b_sts_homed" C="Home realizado" /><EC EK="cmd.b_cmd_home" C="Realiza home" /><EC EK="cmd.b_cmd_jog_pos" C="Jog positivo" /><EC EK="sts.b_sts_enabled" C="Eixo energizado" /><EC EK="cmd.b_cmd_jog_neg" C="Jog negativo" /></ECs>
+++D=BOOL	N=IHMHabilitaJog0	G=VAR_GLOBAL	Com=Habilita Jog pela IHM
+++D=BOOL	N=IHMHabilitaJog1	G=VAR_GLOBAL	Com=Habilita Jog pela IHM
+++D=BOOL	N=IHMMoveEixo0	G=VAR_GLOBAL
+++D=BOOL	N=IHMMoveEixo1	G=VAR_GLOBAL
+++D=MoveParameter	N=IHMMoveParameter	R=1	G=VAR_GLOBAL
+++D=BOOL	N=IHMResetEmergencia	G=VAR_GLOBAL
+++D=_sAXIS_REF	N=MC_Axis001	AT=MC://_MC_AX[1]	RO=1	Const=1	G=VAR_GLOBAL
+++D=BOOL	N=Entrada_0	G=VAR_GLOBAL
+++D=BOOL	N=Entrada_1	G=VAR_GLOBAL
+++D=BOOL	N=Entrada_2	G=VAR_GLOBAL
+++D=BOOL	N=Entrada_3	G=VAR_GLOBAL
+++D=BOOL	N=Entrada_4	G=VAR_GLOBAL
+++D=BOOL	N=Entrada_5	G=VAR_GLOBAL
+++D=BOOL	N=Entrada_6	G=VAR_GLOBAL
+++D=BOOL	N=Entrada_7	G=VAR_GLOBAL
+++D=WORD	N=IN_card_1	G=VAR_GLOBAL
+++D=BOOL	N=ALM_EmEmergencia	G=VAR_GLOBAL
+++D=BOOL	N=ALM_Servo1Falha	G=VAR_GLOBAL
+++D=BOOL	N=ALM_Servo2Falha	G=VAR_GLOBAL
+++D=BOOL	N=ALM_Servo1LimiteTorque	G=VAR_GLOBAL
+++D=BOOL	N=ALM_Servo2LimiteTorque	G=VAR_GLOBAL
+++D=BOOL	N=Reset	NTP=PublicationOutput	G=VAR_GLOBAL
+++D=LREAL	N=Availability	NTP=PublicationOutput	G=VAR_GLOBAL
+++D=UDINT	N=TotalProduction	NTP=PublicationOutput	G=VAR_GLOBAL
+++D=UDINT	N=TotalProductionNG	NTP=PublicationOutput	G=VAR_GLOBAL
+++D=LREAL	N=Quality	NTP=PublicationOutput	G=VAR_GLOBAL
+++D=LREAL	N=Performance	NTP=PublicationOutput	G=VAR_GLOBAL
+++D=LREAL	N=OEE	NTP=PublicationOutput	G=VAR_GLOBAL

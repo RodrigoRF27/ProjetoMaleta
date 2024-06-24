@@ -1,0 +1,30 @@
+<Path Fill="#FF000000" Stroke="{x:Null}" StrokeThickness="1" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Height="18.1726810932159" Width="22.6059576272964">
+    <Path.Data>
+        <PathGeometry FillRule="EvenOdd">
+            <PathFigure StartPoint="11.3029791116714,3.3626811504364" IsClosed="True">
+                <LineSegment Point="6.30297911167145,7.86268067359924"/>
+                <LineSegment Point="6.30297911167145,15.6726810932159"/>
+                <LineSegment Point="8.30297911167145,15.6726810932159"/>
+                <LineSegment Point="8.30297911167145,9.67268109321594"/>
+                <LineSegment Point="14.3029791116714,9.67268109321594"/>
+                <LineSegment Point="14.3029791116714,15.6726810932159"/>
+                <LineSegment Point="16.3029791116714,15.6726810932159"/>
+                <LineSegment Point="16.3029791116714,7.86268067359924"/>
+                <LineSegment Point="11.3029791116714,3.3626811504364"/>
+            </PathFigure>
+            <PathFigure StartPoint="11.3029791116714,0.672681093215942" IsClosed="True">
+                <LineSegment Point="21.3029791116714,9.67268109321594"/>
+                <LineSegment Point="18.3029791116714,9.67268109321594"/>
+                <LineSegment Point="18.3029791116714,17.6726810932159"/>
+                <LineSegment Point="12.3029791116714,17.6726810932159"/>
+                <LineSegment Point="12.3029791116714,11.6726810932159"/>
+                <LineSegment Point="10.3029791116714,11.6726810932159"/>
+                <LineSegment Point="10.3029791116714,17.6726810932159"/>
+                <LineSegment Point="4.30297911167145,17.6726810932159"/>
+                <LineSegment Point="4.30297911167145,9.67268109321594"/>
+                <LineSegment Point="1.30297911167145,9.67268109321594"/>
+                <LineSegment Point="11.3029791116714,0.672681093215942"/>
+            </PathFigure>
+        </PathGeometry>
+    </Path.Data>
+</Path>

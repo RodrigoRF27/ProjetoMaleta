@@ -1,0 +1,64 @@
+{IMPORT<ULs.cxip>}
+MODULE NX END_MODULE {USING<\\NX>}
+INTERFACE LV_7ab08e70b33b4e4cad92be734fa30529
+VAR
+    _dmmy : BOOL;
+END_VAR
+__VAR_SYSTEM CONSTANT
+    P_On : BOOL;
+    P_Off : BOOL;
+    P_CY : BOOL;
+    P_First_RunMode : BOOL;
+    P_First_Run : BOOL;
+__END_VAR
+__VAR_SYSTEM
+    P_PRGER : BOOL;
+__END_VAR
+VAR_EXTERNAL CONSTANT
+    _MC_AX : ARRAY[0..15] OF _sAXIS_REF;
+    _MC_GRP : ARRAY[0..7] OF _sGROUP_REF;
+END_VAR
+VAR_INPUT CONSTANT
+    Execute : BOOL;
+END_VAR
+VAR_INPUT
+    Stop : BOOL;
+    MCodeReset : BOOL;
+END_VAR
+VAR_INPUT CONSTANT
+    SeqNo : UINT;
+END_VAR
+VAR_IN_OUT
+    TskAttr : \\OmronLib\MC_CmdTbl\SubParts\sTSK_ATTR;
+END_VAR
+VAR_IN_OUT CONSTANT
+    MemData : \\OmronLib\MC_CmdTbl\sCMD_DATA;
+END_VAR
+VAR_IN_OUT
+    OutputIF : \\OmronLib\MC_CmdTbl\SubParts\sCMD_OUT;
+END_VAR
+VAR CONSTANT
+    LibSerialNo : DWORD := DWORD#16#00000000;
+END_VAR
+VAR
+    MoveCmd : ARRAY[0..3] OF MC_Move;
+    PTPCmdIF : ARRAY[0..3] OF \\OmronLib\MC_CmdTbl\SubParts\sCMD_PTP_IN;
+    PTPStsIF : ARRAY[0..3] OF \\OmronLib\MC_CmdTbl\SubParts\sCMD_PTP_OUT;
+    Destructor : \\OmronLib\MC_CmdTbl\SubParts\SetCmdOutputIF;
+    Loop : UINT;
+    LoopMax : UINT;
+    TmpDone : BOOL;
+    TmpError : BOOL;
+    TmpCA : BOOL;
+    TmpExecute : BOOL;
+    DwellTime : UINT;
+    MCode : UINT;
+    Ope : UINT;
+END_VAR
+END_INTERFACE
+MODULE NX
+TYPE
+ _dummy4 : (_dummydummy4 := 4);
+END_TYPE
+END_MODULE
+

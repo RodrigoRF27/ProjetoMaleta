@@ -1,0 +1,37 @@
+MODULE NX END_MODULE {USING<\\NX>}
+MODULE OmronLib
+    MODULE MC_CmdTbl
+
+FUNCTION_BLOCK {a<_n_o_t_d_i_v_i_d_e_d_!_>} MCCmdTbl
+    VAR_IN_OUT CONSTANT
+        AxesGroup : _sGROUP_REF;
+    END_VAR
+    VAR_IN_OUT
+        CmdTbl : \\OmronLib\MC_CmdTbl\sCMD_DATA;
+    END_VAR
+    VAR_INPUT
+        Enable : BOOL;
+        Execute : BOOL;
+        StepMode : BOOL;
+        Stop : BOOL;
+        SeqNoSet : BOOL;
+        SeqNo : UINT;
+        MCodeReset : BOOL;
+    END_VAR
+    VAR_OUTPUT
+        Enabled : BOOL;
+        Done : BOOL;
+        CurrentSeqNo : UINT;
+        MStrobe : BOOL;
+        MCode : UINT;
+        DigitalOutputs : DWORD;
+        Busy : BOOL;
+        CommandAborted : BOOL;
+        Error : BOOL;
+        ErrorID : WORD;
+        ErrorIDEx : DWORD;
+    END_VAR
+END_FUNCTION_BLOCK
+    END_MODULE
+END_MODULE
+

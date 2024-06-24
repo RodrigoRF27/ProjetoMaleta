@@ -1,0 +1,21 @@
+MODULE NX END_MODULE {USING<\\NX>}
+MODULE OmronLib
+    MODULE MC_CmdTbl
+        MODULE SubParts
+
+FUNCTION {a<_n_o_t_d_i_v_i_d_e_d_!_>} CmdEnd : BOOL
+    VAR_INPUT CONSTANT
+        SeqNo : UINT;
+    END_VAR
+    VAR_IN_OUT CONSTANT
+        TskAttr : \\OmronLib\MC_CmdTbl\SubParts\sTSK_ATTR;
+        MemData : \\OmronLib\MC_CmdTbl\sCMD_DATA;
+    END_VAR
+    VAR_IN_OUT
+        OutputIF : \\OmronLib\MC_CmdTbl\SubParts\sCMD_OUT;
+    END_VAR
+END_FUNCTION
+        END_MODULE
+    END_MODULE
+END_MODULE
+

@@ -1,0 +1,43 @@
+{IMPORT<ULs.cxip>}
+MODULE NX END_MODULE {USING<\\NX>}
+INTERFACE LV_dfa45b81b9fd47ed8fae870041ea1fa3
+VAR
+    _dmmy : BOOL;
+END_VAR
+__VAR_SYSTEM CONSTANT
+    P_On : BOOL;
+    P_Off : BOOL;
+    P_CY : BOOL;
+    P_First_RunMode : BOOL;
+    P_First_Run : BOOL;
+__END_VAR
+__VAR_SYSTEM
+    P_PRGER : BOOL;
+__END_VAR
+VAR_EXTERNAL CONSTANT
+    _MC_AX : ARRAY[0..15] OF _sAXIS_REF;
+END_VAR
+VAR_IN_OUT CONSTANT
+    AxesGroup : _sGROUP_REF;
+    MemData : \\OmronLib\MC_CmdTbl\sCMD_DATA;
+END_VAR
+VAR_IN_OUT
+    TskAttr : \\OmronLib\MC_CmdTbl\SubParts\sTSK_ATTR;
+END_VAR
+VAR_OUTPUT
+    Error : BOOL;
+    ErrorID : WORD;
+    ErrorIDEx : DWORD;
+END_VAR
+VAR
+    Loop : UINT;
+    LoopMax : UINT;
+    SubLoop : UINT;
+END_VAR
+END_INTERFACE
+MODULE NX
+TYPE
+ _dummy4 : (_dummydummy4 := 4);
+END_TYPE
+END_MODULE
+

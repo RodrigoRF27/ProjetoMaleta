@@ -1,0 +1,23 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=UINT	N=State	IV=0	G=VAR
+++D=TIME	N=PTInst	G=VAR
+++D=TON	N=TONInst	G=VAR
+++D=BOOL	N=TmpDone	G=VAR
+++D=BOOL	N=TmpError	G=VAR
+++D=BOOL	N=TmpCA	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=Stop	Ord=0	G=VAR_INPUT
+++D=BOOL	N=Done	Ord=1	G=VAR_INPUT
+++D=BOOL	N=CA	Ord=2	G=VAR_INPUT
+++D=BOOL	N=Error	Ord=3	G=VAR_INPUT
+++D=BOOL	N=MCodeReset	Ord=4	G=VAR_INPUT
+++D=UINT	N=DwellTime	Ord=5	Const=1	G=VAR_INPUT	Com=ms単位
+++D=UINT	N=Ope	Ord=6	Const=1	G=VAR_INPUT
+++D=UINT	N=MCode	Ord=7	Const=1	G=VAR_INPUT
+++D=BOOL	N=Execute	Ord=8	G=VAR_OUTPUT
+++D=OmronLib\MC_CmdTbl\SubParts\sCMD_OUT	N=OutputIF	Ord=9	G=VAR_IN_OUT
+++D=OmronLib\MC_CmdTbl\SubParts\sTSK_ATTR	N=TskAttr	Ord=10	G=VAR_IN_OUT	Com=タスク属性
+++D=OmronLib\MC_CmdTbl\sCMD_DATA	N=MemData	Ord=11	Const=1	G=VAR_IN_OUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

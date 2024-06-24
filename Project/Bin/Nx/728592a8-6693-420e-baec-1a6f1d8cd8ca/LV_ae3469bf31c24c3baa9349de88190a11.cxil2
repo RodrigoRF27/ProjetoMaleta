@@ -1,0 +1,85 @@
+{IMPORT<ULs.cxip>}
+MODULE NX END_MODULE {USING<\\NX>}
+INTERFACE LV_ae3469bf31c24c3baa9349de88190a11
+VAR
+    _dmmy : BOOL;
+END_VAR
+__VAR_SYSTEM CONSTANT
+    P_On : BOOL;
+    P_Off : BOOL;
+    P_CY : BOOL;
+    P_First_RunMode : BOOL;
+    P_First_Run : BOOL;
+__END_VAR
+__VAR_SYSTEM
+    P_PRGER : BOOL;
+__END_VAR
+VAR
+ _tmpRslt_STRING1986: STRING[1986] {N<D>};
+END_VAR
+VAR_EXTERNAL
+    OEE : LREAL;
+    Availability : LREAL;
+    Quality : LREAL;
+    Performance : LREAL;
+END_VAR
+VAR RETAIN
+    iContadorRegistros : DINT;
+END_VAR
+VAR
+    bDBConnect : BOOL;
+    DBConnectFB : DB_Connect;
+    DBConnectBusy : BOOL;
+    DBConnectError : BOOL;
+    DBConnectErrorID : WORD;
+    DBConnection01Number : DWORD;
+    DBConnectReady : BOOL;
+    DBCloseFB : DB_Close;
+    DBCloseDone : BOOL;
+    DBCloseBusy : BOOL;
+    DBCloseError : BOOL;
+    DBCloseErrorID : WORD;
+    bInsertDB : BOOL;
+    DBInsertFB01 : DB_Insert;
+    DBInsert01Done : BOOL;
+    DBInsert01Busy : BOOL;
+    DBInsert01Error : BOOL;
+    DBInsert01ErrorID : WORD;
+    DBInsert01SStatus : _eDBC_SEND_STATUS;
+    bMapInsert : BOOL;
+    DBCreateMap01FB : DB_CreateMapping;
+    DBMap01OK : BOOL;
+    DBTabelaOEE_Insert : \\TabelaOEE;
+    bGravaDadosTabelaOEE : BOOL;
+    SelectStatement : STRING[256];
+    DBTabelaOEE_Select : ARRAY[0..9] OF \\TabelaOEE;
+    bSelectDB : BOOL;
+    DBCreateMap02FB : DB_CreateMapping;
+    DBMap02OK : BOOL;
+    DBSelectFB02 : DB_Select;
+    DBSelectFB02Done : BOOL;
+    DBSelectFB02Busy : BOOL;
+    DBSelectFB02Error : BOOL;
+    DBSelectFB02ErrorID : WORD;
+    iSelectCont : DINT;
+    iRecCont : DINT;
+    DBGetStatusFB : DB_GetConnectionStatus;
+    DBGetStatusDone : BOOL;
+    DBGetStatusBusy : BOOL;
+    DBGetStatusError : BOOL;
+    DBGetStatusErrorID : WORD;
+    DBGetStatusStatus : _sDBC_CONNECTION_STATUS;
+    bDBStatus : BOOL;
+END_VAR
+VAR
+ _Diff_d436c429271a46b29043d80a1d0494d8: BOOL := TRUE;
+ _Diff_bf4b23882ff7469c8e9461831fe6238c: BOOL := TRUE;
+    Selecao : INT;
+END_VAR
+END_INTERFACE
+MODULE NX
+TYPE
+ _dummy4 : (_dummydummy4 := 4);
+END_TYPE
+END_MODULE
+

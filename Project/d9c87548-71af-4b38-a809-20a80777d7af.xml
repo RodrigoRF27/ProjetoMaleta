@@ -1,0 +1,16 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=LREAL	N=Diff	G=VAR
+++D=LINT	N=WrapCount	G=VAR
+++D=LREAL	N=ModuloSize	G=VAR
+++D=LREAL	N=ModuloMax	G=VAR
+++D=LREAL	N=ModuloMin	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=EN	Ord=0	RO=1	G=VAR_INPUT
+++D=_sAXIS_REF	N=Axis	Ord=1	Const=1	G=VAR_IN_OUT
+++D=LREAL	N=InputPosition	Ord=2	G=VAR_INPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
+++D=ARRAY[0..15] OF _sAXIS_REF	N=_MC_AX	Const=1	G=VAR_EXTERNAL
++GN=RETURN	GA=Return	GVT=ReturnGroup
+++D=LREAL	N=CalcRoundPosition	G=RETURN

@@ -1,0 +1,31 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=BOOL	N=Start	G=VAR
+++D=TON	N=Timer_Start	G=VAR
+++D=BOOL	N=StopStatus	G=VAR
+++D=LREAL	N=RandomValue	G=VAR
+++D=Rand	N=RandomFailure	G=VAR
+++D=BOOL	N=ErrorStop	G=VAR
+++D=BOOL	N=OtherStop	G=VAR
+++D=LREAL	N=Velocity	G=VAR
+++D=TIME	N=TimeInStop	G=VAR
+++D=TON	N=Timer_Stop	G=VAR
+++D=ULINT	N=ulTimeInStop	G=VAR
+++D=TIME	N=accTime	G=VAR
+++D=TIME	N=accTimeInStop	G=VAR
+++D=AccumulationTimer	N=TimeALL	G=VAR
+++D=AccumulationTimer	N=TimeStopCounter	G=VAR
+++D=LREAL	N=ElapsedTime	G=VAR
+++D=INT	N=TactTime	G=VAR
+++D=BOOL	N=EndOfProduct	G=VAR
+++D=BOOL	N=AuxMaqLigada	G=VAR
+++D=BOOL	N=UpEndOfProduct	G=VAR
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
+++D=BOOL	N=Reset	G=VAR_EXTERNAL
+++D=LREAL	N=Availability	G=VAR_EXTERNAL
+++D=UDINT	N=TotalProduction	G=VAR_EXTERNAL
+++D=UDINT	N=TotalProductionNG	G=VAR_EXTERNAL
+++D=LREAL	N=Quality	G=VAR_EXTERNAL
+++D=LREAL	N=Performance	G=VAR_EXTERNAL
+++D=LREAL	N=OEE	G=VAR_EXTERNAL

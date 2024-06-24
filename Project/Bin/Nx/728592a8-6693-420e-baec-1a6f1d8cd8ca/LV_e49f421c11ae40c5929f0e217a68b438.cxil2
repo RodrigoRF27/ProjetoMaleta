@@ -1,0 +1,54 @@
+{IMPORT<ULs.cxip>}
+MODULE NX END_MODULE {USING<\\NX>}
+INTERFACE LV_e49f421c11ae40c5929f0e217a68b438
+VAR
+    _dmmy : BOOL;
+END_VAR
+__VAR_SYSTEM CONSTANT
+    P_On : BOOL;
+    P_Off : BOOL;
+    P_CY : BOOL;
+    P_First_RunMode : BOOL;
+    P_First_Run : BOOL;
+__END_VAR
+__VAR_SYSTEM
+    P_PRGER : BOOL;
+__END_VAR
+VAR_INPUT
+    ID : UINT;
+END_VAR
+VAR_IN_OUT
+    TskAttr : \\OmronLib\MC_CmdTbl\SubParts\sTSK_ATTR;
+END_VAR
+VAR_IN_OUT CONSTANT
+    MemData : \\OmronLib\MC_CmdTbl\sCMD_DATA;
+END_VAR
+VAR_IN_OUT
+    OutputIF : \\OmronLib\MC_CmdTbl\SubParts\sCMD_OUT;
+    TmpOutputIF : \\OmronLib\MC_CmdTbl\SubParts\sCMD_OUT;
+END_VAR
+VAR_OUTPUT
+    UpTrig : BOOL;
+END_VAR
+VAR_IN_OUT
+    StepExe : BOOL;
+    AutoExe : BOOL;
+END_VAR
+VAR CONSTANT
+    cTraMode : ARRAY[2..4] OF _eMC_TRANSITION_MODE := [2(_mcTMNone), _mcTMCornerSuperimposed];
+    cBufMode : ARRAY[2..4] OF _eMC_BUFFER_MODE := [_mcBlendingNext, _mcBlendingPrevious, _mcBlendingNext];
+END_VAR
+VAR
+    SeqNo : UINT;
+    TmpID : UINT;
+    CmdCode : ARRAY[0..1] OF WORD;
+    SeqNoPlus : UINT;
+    ReadAheadState : UINT;
+END_VAR
+END_INTERFACE
+MODULE NX
+TYPE
+ _dummy4 : (_dummydummy4 := 4);
+END_TYPE
+END_MODULE
+

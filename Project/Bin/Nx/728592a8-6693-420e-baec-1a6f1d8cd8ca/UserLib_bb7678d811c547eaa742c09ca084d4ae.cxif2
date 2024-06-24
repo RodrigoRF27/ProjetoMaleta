@@ -1,0 +1,23 @@
+MODULE NX END_MODULE {USING<\\NX>}
+MODULE OmronLib
+    MODULE MC_CmdTbl
+        MODULE SubParts
+
+FUNCTION {a<_n_o_t_d_i_v_i_d_e_d_!_>} GetAxisCmdPos : LREAL
+    VAR_INPUT CONSTANT
+        AxisNo : UINT;
+    END_VAR
+    VAR_IN_OUT
+        TskAttr : \\OmronLib\MC_CmdTbl\SubParts\sTSK_ATTR;
+    END_VAR
+    VAR_IN_OUT CONSTANT
+        SeqData : \\OmronLib\MC_CmdTbl\sSEQ_DATA;
+    END_VAR
+    VAR_OUTPUT
+        MoveMode : _eMC_MOVE_MODE;
+    END_VAR
+END_FUNCTION
+        END_MODULE
+    END_MODULE
+END_MODULE
+

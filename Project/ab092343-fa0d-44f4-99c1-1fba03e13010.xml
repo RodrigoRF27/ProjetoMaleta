@@ -1,0 +1,19 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=DATE_AND_TIME	N=ClpTime	G=VAR
+++D=_sDT	N=ClpTimeStruct	G=VAR
+++D=_eDAYOFWEEK	N=ClpDayOfWeek	G=VAR
+++D=DiaSemana	N=DayOfWeekInt	G=VAR
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
+++D=BOOL	N=IHMResetEmergencia	G=VAR_EXTERNAL
+++D=BOOL	N=SFTResetEmergencia	G=VAR_EXTERNAL
+++D=WORD	N=IN_card_1	G=VAR_EXTERNAL
+++D=BOOL	N=SFTEmergenciaOK	G=VAR_EXTERNAL
+++D=BOOL	N=ALM_EmEmergencia	G=VAR_EXTERNAL
+++D=BOOL	N=ALM_Servo1Falha	G=VAR_EXTERNAL
+++D=BOOL	N=ALM_Servo2Falha	G=VAR_EXTERNAL
+++D=BOOL	N=ALM_Servo1LimiteTorque	G=VAR_EXTERNAL
+++D=BOOL	N=ALM_Servo2LimiteTorque	G=VAR_EXTERNAL
+++D=_sAXIS_REF	N=MC_Axis001	Const=1	G=VAR_EXTERNAL
+++D=_sAXIS_REF	N=MC_Axis000	Const=1	G=VAR_EXTERNAL

@@ -1,0 +1,23 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=UINT	N=SeqNo	G=VAR
+++D=UINT	N=TmpID	G=VAR
+++D=ARRAY[0..1] OF WORD	N=CmdCode	G=VAR
+++D=ARRAY[2..4] OF _eMC_TRANSITION_MODE	N=cTraMode	IV=[2(_mcTMNone), _mcTMCornerSuperimposed]	Const=1	G=VAR
+++D=UINT	N=SeqNoPlus	G=VAR
+++D=UINT	N=ReadAheadState	G=VAR
+++D=ARRAY[2..4] OF _eMC_BUFFER_MODE	N=cBufMode	IV=[_mcBlendingNext, _mcBlendingPrevious, _mcBlendingNext]	Const=1	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=EN	Ord=0	RO=1	G=VAR_INPUT
+++D=UINT	N=ID	Ord=1	G=VAR_INPUT
+++D=OmronLib\MC_CmdTbl\SubParts\sTSK_ATTR	N=TskAttr	Ord=2	G=VAR_IN_OUT
+++D=OmronLib\MC_CmdTbl\sCMD_DATA	N=MemData	Ord=3	Const=1	G=VAR_IN_OUT
+++D=OmronLib\MC_CmdTbl\SubParts\sCMD_OUT	N=OutputIF	Ord=4	G=VAR_IN_OUT
+++D=OmronLib\MC_CmdTbl\SubParts\sCMD_OUT	N=TmpOutputIF	Ord=5	G=VAR_IN_OUT	Com=命令出力
+++D=BOOL	N=UpTrig	Ord=6	G=VAR_OUTPUT
+++D=BOOL	N=StepExe	Ord=7	G=VAR_IN_OUT
+++D=BOOL	N=AutoExe	Ord=8	G=VAR_IN_OUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
++GN=RETURN	GA=Return	GVT=ReturnGroup
+++D=BOOL	N=ChkCmdOutput	G=RETURN

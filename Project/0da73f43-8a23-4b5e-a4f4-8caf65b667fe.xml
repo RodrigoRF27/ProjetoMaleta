@@ -1,0 +1,30 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=MC_GroupDisable	N=GrpDisableCmd	G=VAR
+++D=MC_GroupEnable	N=GrpEnableCmd	G=VAR
+++D=MC_GroupStop	N=GrpStopCmd	G=VAR
+++D=ARRAY[0..3] OF MC_Stop	N=StopCmd	G=VAR
+++D=BOOL	N=TmpGrpDisable	G=VAR
+++D=BOOL	N=TmpGrpEnable	G=VAR
+++D=BOOL	N=TmpAxisStop	G=VAR
+++D=BOOL	N=OldGrpDisable	G=VAR
+++D=BOOL	N=OldGrpEnable	G=VAR
+++D=BOOL	N=OldAxisStop	G=VAR
+++D=UINT	N=LoopMax	IV=UINT#0	G=VAR
+++D=UINT	N=AxisNo	G=VAR
+++D=ARRAY[0..3] OF LREAL	N=AccDec	G=VAR
+++D=USINT	N=ProfileNo	G=VAR
+++D=BOOL	N=Group_Stop_Exe	G=VAR
+++D=ARRAY[0..3] OF BOOL	N=Stop_Exe	G=VAR
+++D=LREAL	N=Group_AccDec	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=GrpEnable	Ord=0	Const=1	G=VAR_INPUT
+++D=BOOL	N=GrpDisable	Ord=1	Const=1	G=VAR_INPUT
+++D=BOOL	N=Stop	Ord=2	Const=1	G=VAR_INPUT
+++D=UINT	N=SeqNo	Ord=3	G=VAR_INPUT
+++D=OmronLib\MC_CmdTbl\sCMD_DATA	N=MemData	Ord=4	Const=1	G=VAR_IN_OUT	Com=メモリ運転データ
+++D=OmronLib\MC_CmdTbl\SubParts\sTSK_ATTR	N=TskAttr	Ord=5	G=VAR_IN_OUT	Com=タスク属性
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
+++D=ARRAY[0..7] OF _sGROUP_REF	N=_MC_GRP	Const=1	G=VAR_EXTERNAL
+++D=ARRAY[0..15] OF _sAXIS_REF	N=_MC_AX	Const=1	G=VAR_EXTERNAL

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<data>
+  <ControllerId>a7c1d433-a722-430e-ab6a-bc0f5beb6c62</ControllerId>
+  <ControllerName></ControllerName>
+  <MajorVersion>1</MajorVersion>
+  <MinorVersion>60</MinorVersion>
+  <Revision>0</Revision>
+  <Category>Controller</Category>
+  <Family>Nex</Family>
+  <ModelName>NX102</ModelName>
+  <ModelDetail>1120</ModelDetail>
+  <SystemErrorMessageDisplayLanguageSetting>en-US,ja-JP</SystemErrorMessageDisplayLanguageSetting>
+  <IsDuplicateIdOptimized>true</IsDuplicateIdOptimized>
+  <Packages>DBCon 2.01</Packages>
+  <IsWithoutCommentTransfer>false</IsWithoutCommentTransfer>
+</data>

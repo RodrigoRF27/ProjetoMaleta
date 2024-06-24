@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<autoTuneViewSettings>
+  <easyAutoTune>
+    <criteria bestEffort="false" trajectoryAccuracy="true" stabilizationTime="30" focusOnTracking="true" />
+    <motionProfile accelerationTime="50" counted="false" direction="0" mode="2" distance="25165824" speed="500" />
+  </easyAutoTune>
+  <advancedAutoTune>
+    <motionProfile accelerationTime="50" counted="false" direction="0" mode="2" distance="25165824" speed="500" />
+    <timeResponseMotionProfile accelerationTime="50" counted="false" direction="0" mode="2" distance="25165824" speed="500" />
+  </advancedAutoTune>
+</autoTuneViewSettings>

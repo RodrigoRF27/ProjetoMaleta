@@ -1,0 +1,60 @@
+{IMPORT<ULs.cxip>}
+MODULE NX END_MODULE {USING<\\NX>}
+INTERFACE LV_7bd59e0a42664a30bc0b3b5b48d144d8
+VAR
+    _dmmy : BOOL;
+END_VAR
+__VAR_SYSTEM CONSTANT
+    P_On : BOOL;
+    P_Off : BOOL;
+    P_CY : BOOL;
+    P_First_RunMode : BOOL;
+    P_First_Run : BOOL;
+__END_VAR
+__VAR_SYSTEM
+    P_PRGER : BOOL;
+__END_VAR
+VAR_EXTERNAL CONSTANT
+    _MC_GRP : ARRAY[0..7] OF _sGROUP_REF;
+    _MC_AX : ARRAY[0..15] OF _sAXIS_REF;
+END_VAR
+VAR_INPUT CONSTANT
+    GrpEnable : BOOL;
+    GrpDisable : BOOL;
+    Stop : BOOL;
+END_VAR
+VAR_INPUT
+    SeqNo : UINT;
+END_VAR
+VAR_IN_OUT CONSTANT
+    MemData : \\OmronLib\MC_CmdTbl\sCMD_DATA;
+END_VAR
+VAR_IN_OUT
+    TskAttr : \\OmronLib\MC_CmdTbl\SubParts\sTSK_ATTR;
+END_VAR
+VAR
+    GrpDisableCmd : MC_GroupDisable;
+    GrpEnableCmd : MC_GroupEnable;
+    GrpStopCmd : MC_GroupStop;
+    StopCmd : ARRAY[0..3] OF MC_Stop;
+    TmpGrpDisable : BOOL;
+    TmpGrpEnable : BOOL;
+    TmpAxisStop : BOOL;
+    OldGrpDisable : BOOL;
+    OldGrpEnable : BOOL;
+    OldAxisStop : BOOL;
+    LoopMax : UINT := UINT#0;
+    AxisNo : UINT;
+    AccDec : ARRAY[0..3] OF LREAL;
+    ProfileNo : USINT;
+    Group_Stop_Exe : BOOL;
+    Stop_Exe : ARRAY[0..3] OF BOOL;
+    Group_AccDec : LREAL;
+END_VAR
+END_INTERFACE
+MODULE NX
+TYPE
+ _dummy4 : (_dummydummy4 := 4);
+END_TYPE
+END_MODULE
+

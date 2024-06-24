@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Manifest manifestSchemaVersion="1" modelSchemaVersion="1">
+  <Application applicationName="sysmac" applicationVersion="Infinity" />
+  <Solution solutionName="Demo_Maleta_control" id="92a291ac-1dfa-4272-874b-533300600de8" trackingId="b39ba5ba-5e48-4d74-8b37-8d1c8ba51161" solutionSchemaVersion="2">
+    <ApplicationFeatures>
+      <ApplicationFeature name="HMI" />
+      <ApplicationFeature name="NA5-7W001☐-V1Version:1.17" />
+      <ApplicationFeature name="V102Project" />
+      <ApplicationFeature name="DBCon V2.01" />
+      <ApplicationFeature name="SetUnit NX102-1120 Ver. 1.60" />
+      <ApplicationFeature name="NexLibraryInternalUsed" />
+      <ApplicationFeature name="TransferInfoAndBuildResultsEntitiesReduced" />
+    </ApplicationFeatures>
+  </Solution>
+</Manifest>

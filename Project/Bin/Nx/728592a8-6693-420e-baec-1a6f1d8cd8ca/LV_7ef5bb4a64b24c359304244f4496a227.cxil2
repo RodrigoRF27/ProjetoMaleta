@@ -1,0 +1,89 @@
+{IMPORT<ULs.cxip>}
+MODULE NX END_MODULE {USING<\\NX>}
+INTERFACE LV_7ef5bb4a64b24c359304244f4496a227
+VAR
+    _dmmy : BOOL;
+END_VAR
+__VAR_SYSTEM CONSTANT
+    P_On : BOOL;
+    P_Off : BOOL;
+    P_CY : BOOL;
+    P_First_RunMode : BOOL;
+    P_First_Run : BOOL;
+__END_VAR
+__VAR_SYSTEM
+    P_PRGER : BOOL;
+__END_VAR
+VAR_EXTERNAL CONSTANT
+    _MC_GRP : ARRAY[0..7] OF _sGROUP_REF;
+    _MC_AX : ARRAY[0..15] OF _sAXIS_REF;
+END_VAR
+VAR_IN_OUT CONSTANT
+    AxesGroup : _sGROUP_REF;
+END_VAR
+VAR_IN_OUT
+    CmdTbl : \\OmronLib\MC_CmdTbl\sCMD_DATA;
+END_VAR
+VAR_INPUT
+    Enable : BOOL := BOOL#False;
+    Execute : BOOL := BOOL#False;
+    StepMode : BOOL := BOOL#False;
+    Stop : BOOL := BOOL#False;
+    SeqNoSet : BOOL := BOOL#False;
+    SeqNo : UINT := UINT#0;
+    MCodeReset : BOOL := BOOL#False;
+END_VAR
+VAR_OUTPUT
+    Enabled : BOOL;
+    Done : BOOL;
+    CurrentSeqNo : UINT;
+    MStrobe : BOOL;
+    MCode : UINT;
+    DigitalOutputs : DWORD;
+    Busy : BOOL;
+    CommandAborted : BOOL;
+    Error : BOOL;
+    ErrorID : WORD;
+    ErrorIDEx : DWORD;
+END_VAR
+VAR
+    OldEnable : BOOL;
+    ExeUpTrig : R_TRIG;
+    ErrUpTrig : R_TRIG;
+    SeqNoSetUpTrig : BOOL;
+    SeqChkError : BOOL;
+    ChkInitialCondError : BOOL;
+    ChkAxesCondError : BOOL;
+    ErrOccurred : BOOL;
+    UpExe : BOOL;
+    OutputIF : \\OmronLib\MC_CmdTbl\SubParts\sCMD_OUT;
+    TmpOutputIF : \\OmronLib\MC_CmdTbl\SubParts\sCMD_OUT;
+    TmpAutoExe : BOOL;
+    TmpBit : BOOL;
+    TmpStepExe : BOOL;
+    TmpStop : BOOL;
+    TmpSeqNoSet : BOOL;
+    TmpSeqNo : UINT;
+    TmpMCodeReset : BOOL;
+    TmpEnabled : BOOL;
+    TmpTeachingDone : BOOL;
+    InterpreterInst : \\OmronLib\MC_CmdTbl\SubParts\Interpreter;
+    TskAttr : \\OmronLib\MC_CmdTbl\SubParts\sTSK_ATTR;
+    DoneTrig : R_TRIG;
+    CATrig : R_TRIG;
+    ErrTrig : R_TRIG;
+    TmpExeTrig : R_TRIG;
+    SeqSetTrig : R_TRIG;
+    MRsetTrig : R_TRIG;
+    ErrOccurred_Error : BOOL;
+    ErrOccurred_ErrorID : WORD;
+    ErrOccurred_ErrorIDEx : DWORD;
+    SeqChk : BOOL;
+END_VAR
+END_INTERFACE
+MODULE NX
+TYPE
+ _dummy4 : (_dummydummy4 := 4);
+END_TYPE
+END_MODULE
+

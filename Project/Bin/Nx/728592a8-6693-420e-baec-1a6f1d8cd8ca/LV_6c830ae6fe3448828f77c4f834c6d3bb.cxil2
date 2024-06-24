@@ -1,0 +1,53 @@
+{IMPORT<ULs.cxip>}
+MODULE NX END_MODULE {USING<\\NX>}
+INTERFACE LV_6c830ae6fe3448828f77c4f834c6d3bb
+VAR
+    _dmmy : BOOL;
+END_VAR
+__VAR_SYSTEM CONSTANT
+    P_On : BOOL;
+    P_Off : BOOL;
+    P_CY : BOOL;
+    P_First_RunMode : BOOL;
+    P_First_Run : BOOL;
+__END_VAR
+__VAR_SYSTEM
+    P_PRGER : BOOL;
+__END_VAR
+VAR_INPUT
+    Stop : BOOL;
+    Done : BOOL;
+    CA : BOOL;
+    Error : BOOL;
+    MCodeReset : BOOL;
+END_VAR
+VAR_INPUT CONSTANT
+    DwellTime : UINT;
+    Ope : UINT;
+    MCode : UINT;
+END_VAR
+VAR_OUTPUT
+    Execute : BOOL;
+END_VAR
+VAR_IN_OUT
+    OutputIF : \\OmronLib\MC_CmdTbl\SubParts\sCMD_OUT;
+    TskAttr : \\OmronLib\MC_CmdTbl\SubParts\sTSK_ATTR;
+END_VAR
+VAR_IN_OUT CONSTANT
+    MemData : \\OmronLib\MC_CmdTbl\sCMD_DATA;
+END_VAR
+VAR
+    State : UINT := UINT#0;
+    PTInst : TIME;
+    TONInst : TON;
+    TmpDone : BOOL;
+    TmpError : BOOL;
+    TmpCA : BOOL;
+END_VAR
+END_INTERFACE
+MODULE NX
+TYPE
+ _dummy4 : (_dummydummy4 := 4);
+END_TYPE
+END_MODULE
+

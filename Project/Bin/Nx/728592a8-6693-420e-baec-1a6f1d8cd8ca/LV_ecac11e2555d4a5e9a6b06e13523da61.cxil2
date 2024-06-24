@@ -1,0 +1,39 @@
+{IMPORT<ULs.cxip>}
+MODULE NX END_MODULE {USING<\\NX>}
+INTERFACE LV_ecac11e2555d4a5e9a6b06e13523da61
+VAR
+    _dmmy : BOOL;
+END_VAR
+__VAR_SYSTEM CONSTANT
+    P_On : BOOL;
+    P_Off : BOOL;
+    P_CY : BOOL;
+    P_First_RunMode : BOOL;
+    P_First_Run : BOOL;
+__END_VAR
+__VAR_SYSTEM
+    P_PRGER : BOOL;
+__END_VAR
+VAR_EXTERNAL CONSTANT
+    _MC_AX : ARRAY[0..15] OF _sAXIS_REF;
+END_VAR
+VAR_IN_OUT CONSTANT
+    Axis : _sAXIS_REF;
+END_VAR
+VAR_INPUT
+    InputPosition : LREAL;
+END_VAR
+VAR
+    Diff : LREAL;
+    WrapCount : LINT;
+    ModuloSize : LREAL;
+    ModuloMax : LREAL;
+    ModuloMin : LREAL;
+END_VAR
+END_INTERFACE
+MODULE NX
+TYPE
+ _dummy4 : (_dummydummy4 := 4);
+END_TYPE
+END_MODULE
+

@@ -1,0 +1,48 @@
+{IMPORT<ULs.cxip>}
+MODULE NX END_MODULE {USING<\\NX>}
+INTERFACE LV_b395b7b487b74b9eb6576ce54ec65183
+VAR
+    _dmmy : BOOL;
+END_VAR
+__VAR_SYSTEM CONSTANT
+    P_On : BOOL;
+    P_Off : BOOL;
+    P_CY : BOOL;
+    P_First_RunMode : BOOL;
+    P_First_Run : BOOL;
+__END_VAR
+__VAR_SYSTEM
+    P_PRGER : BOOL;
+__END_VAR
+VAR
+ _tmpRslt_DATE_AND_TIME: DATE_AND_TIME {N<D>};
+ _tmpRslt_STRING1986: STRING[1986] {N<D>};
+END_VAR
+VAR_EXTERNAL CONSTANT
+    MC_Axis001 : _sAXIS_REF;
+    MC_Axis000 : _sAXIS_REF;
+END_VAR
+VAR_EXTERNAL
+    IHMResetEmergencia : BOOL;
+    SFTResetEmergencia : BOOL;
+    IN_card_1 : WORD;
+    SFTEmergenciaOK : BOOL;
+    ALM_EmEmergencia : BOOL;
+    ALM_Servo1Falha : BOOL;
+    ALM_Servo2Falha : BOOL;
+    ALM_Servo1LimiteTorque : BOOL;
+    ALM_Servo2LimiteTorque : BOOL;
+END_VAR
+VAR
+    ClpTime : DATE_AND_TIME;
+    ClpTimeStruct : _sDT;
+    ClpDayOfWeek : _eDAYOFWEEK;
+    DayOfWeekInt : \\DiaSemana;
+END_VAR
+END_INTERFACE
+MODULE NX
+TYPE
+ _dummy4 : (_dummydummy4 := 4);
+END_TYPE
+END_MODULE
+

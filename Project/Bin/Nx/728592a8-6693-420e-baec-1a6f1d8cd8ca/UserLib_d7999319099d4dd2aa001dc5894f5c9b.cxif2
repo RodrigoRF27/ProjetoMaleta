@@ -1,0 +1,19 @@
+MODULE NX END_MODULE {USING<\\NX>}
+MODULE OmronLib
+    MODULE MC_CmdTbl
+        MODULE SubParts
+
+FUNCTION {a<_n_o_t_d_i_v_i_d_e_d_!_>} ChkSeqNo : BOOL
+    VAR_INPUT
+        SeqNo : UINT;
+    END_VAR
+    VAR_OUTPUT
+        Error : BOOL;
+        ErrorID : WORD;
+        ErrorIDEx : DWORD;
+    END_VAR
+END_FUNCTION
+        END_MODULE
+    END_MODULE
+END_MODULE
+

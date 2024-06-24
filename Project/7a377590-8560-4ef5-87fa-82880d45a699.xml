@@ -1,0 +1,5 @@
+﻿{"CLs":[{"__type":"LD","Not":true,"Var":"SFTEmergenciaOK"},{"__type":"ST","Ix":1,"Var":"ALM_EmEmergencia","X":1}],"CMT":"Equipamento em emergência","LRI":2,"RRI":3,"VLs":[]}
+{"CLs":[{"__type":"LD","Var":"P_Off"},{"__type":"LD","Ix":1,"Var":"MC_Axis000.MFaultLvl.Active","X":1},{"__type":"LD","Ix":2,"Var":"MC_Axis000.Status.ErrorStop","X":1,"Y":1},{"__type":"ST","Ix":3,"Var":"ALM_Servo1Falha","X":2}],"CMT":"Servo 1 em falha","LRI":4,"RRI":5,"VLs":[{"Ix":6,"X":1},{"Ix":7,"X":2}]}
+{"CLs":[{"__type":"LD","Var":"P_Off"},{"__type":"LD","Ix":1,"Var":"MC_Axis001.MFaultLvl.Active","X":1},{"__type":"LD","Ix":2,"Var":"MC_Axis001.Status.ErrorStop","X":1,"Y":1},{"__type":"ST","Ix":3,"Var":"ALM_Servo2Falha","X":2}],"CMT":"Servo 2 em falha","LRI":4,"RRI":5,"VLs":[{"Ix":6,"X":1},{"Ix":7,"X":2}]}
+{"CLs":[{"__type":"LD","Var":"P_Off"},{"__type":"ST","Ix":1,"Var":"ALM_Servo1LimiteTorque","X":1}],"CMT":"Servo 1 Limite de torque","LRI":2,"RRI":3,"VLs":[]}
+{"CLs":[{"__type":"LD","Var":"P_Off"},{"__type":"ST","Ix":1,"Var":"ALM_Servo2LimiteTorque","X":1}],"CMT":"Servo 1 Limite de torque","LRI":2,"RRI":3,"VLs":[]}

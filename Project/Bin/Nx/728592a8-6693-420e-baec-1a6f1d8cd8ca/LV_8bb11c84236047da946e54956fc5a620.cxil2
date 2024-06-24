@@ -1,0 +1,62 @@
+{IMPORT<ULs.cxip>}
+MODULE NX END_MODULE {USING<\\NX>}
+INTERFACE LV_8bb11c84236047da946e54956fc5a620
+VAR
+    _dmmy : BOOL;
+END_VAR
+__VAR_SYSTEM CONSTANT
+    P_On : BOOL;
+    P_Off : BOOL;
+    P_CY : BOOL;
+    P_First_RunMode : BOOL;
+    P_First_Run : BOOL;
+__END_VAR
+__VAR_SYSTEM
+    P_PRGER : BOOL;
+__END_VAR
+VAR_EXTERNAL CONSTANT
+    _MC_AX : ARRAY[0..15] OF _sAXIS_REF;
+END_VAR
+VAR_INPUT CONSTANT
+    AutoExecute : BOOL R_EDGE;
+    StepExecute : BOOL R_EDGE;
+    Stop : BOOL;
+    SeqNoSet : BOOL R_EDGE;
+    SeqNo : UINT;
+    MCodeReset : BOOL R_EDGE;
+END_VAR
+VAR_IN_OUT CONSTANT
+    MemData : \\OmronLib\MC_CmdTbl\sCMD_DATA;
+END_VAR
+VAR_IN_OUT
+    OutputIF : \\OmronLib\MC_CmdTbl\SubParts\sCMD_OUT;
+    TskAttr : \\OmronLib\MC_CmdTbl\SubParts\sTSK_ATTR;
+END_VAR
+VAR
+    TmpSeqNo : UINT;
+    ID : UINT;
+    TmpID : UINT;
+    LoopMax : UINT;
+    CmdNo : ARRAY[0..1] OF UINT;
+    MoveLinearCmd : ARRAY[0..1] OF \\OmronLib\MC_CmdTbl\SubParts\CmdMoveLinear;
+    MoveCircularCmd : ARRAY[0..1] OF \\OmronLib\MC_CmdTbl\SubParts\CmdMoveCircular;
+    TmpOutputIF : ARRAY[0..1] OF \\OmronLib\MC_CmdTbl\SubParts\sCMD_OUT;
+    MultiAxesPTPCmd : \\OmronLib\MC_CmdTbl\SubParts\CmdMultiAxesPTP;
+    AxisGrpCtrl : \\OmronLib\MC_CmdTbl\SubParts\AxisCtrl;
+    UpTrig : BOOL;
+    TmpAutoExe : BOOL;
+    TmpStepExe : BOOL;
+    TmpExe : BOOL;
+    TmpExeUp : BOOL;
+    TmpExeUpTrig : R_TRIG;
+    GrpEnable : BOOL;
+    GrpDisable : BOOL;
+    OldBusy : BOOL;
+END_VAR
+END_INTERFACE
+MODULE NX
+TYPE
+ _dummy4 : (_dummydummy4 := 4);
+END_TYPE
+END_MODULE
+

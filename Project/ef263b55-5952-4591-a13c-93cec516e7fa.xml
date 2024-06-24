@@ -1,0 +1,35 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=UINT	N=TmpSeqNo	G=VAR
+++D=UINT	N=ID	G=VAR	Com=先読みID
+++D=UINT	N=TmpID	G=VAR
+++D=UINT	N=LoopMax	G=VAR
+++D=ARRAY[0..1] OF UINT	N=CmdNo	G=VAR
+++D=ARRAY[0..1] OF OmronLib\MC_CmdTbl\SubParts\CmdMoveLinear	N=MoveLinearCmd	G=VAR
+++D=ARRAY[0..1] OF OmronLib\MC_CmdTbl\SubParts\CmdMoveCircular	N=MoveCircularCmd	G=VAR
+++D=ARRAY[0..1] OF OmronLib\MC_CmdTbl\SubParts\sCMD_OUT	N=TmpOutputIF	G=VAR
+++D=OmronLib\MC_CmdTbl\SubParts\CmdMultiAxesPTP	N=MultiAxesPTPCmd	G=VAR
+++D=OmronLib\MC_CmdTbl\SubParts\AxisCtrl	N=AxisGrpCtrl	G=VAR
+++D=BOOL	N=UpTrig	G=VAR
+++D=BOOL	N=TmpAutoExe	G=VAR
+++D=BOOL	N=TmpStepExe	G=VAR
+++D=BOOL	N=TmpExe	G=VAR
+++D=BOOL	N=TmpExeUp	G=VAR
+++D=R_TRIG	N=TmpExeUpTrig	G=VAR
+++D=BOOL	N=GrpEnable	G=VAR
+++D=BOOL	N=GrpDisable	G=VAR
+++D=BOOL	N=OldBusy	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT
+++D=BOOL	N=AutoExecute	E=UpDirection	Ord=1	Const=1	G=VAR_INPUT	Com=自動運転開始
+++D=BOOL	N=StepExecute	E=UpDirection	Ord=2	Const=1	G=VAR_INPUT	Com=ステップ運転開始
+++D=BOOL	N=Stop	Ord=3	Const=1	G=VAR_INPUT	Com=停止実行
+++D=BOOL	N=SeqNoSet	E=UpDirection	Ord=4	Const=1	G=VAR_INPUT	Com=シーケンスNo.セット
+++D=UINT	N=SeqNo	Ord=5	Const=1	G=VAR_INPUT	Com=シーケンスNo.
+++D=BOOL	N=MCodeReset	E=UpDirection	Ord=6	Const=1	G=VAR_INPUT	Com=Mコードリセット
+++D=OmronLib\MC_CmdTbl\sCMD_DATA	N=MemData	Ord=7	Const=1	G=VAR_IN_OUT	Com=メモリ運転データ
+++D=OmronLib\MC_CmdTbl\SubParts\sCMD_OUT	N=OutputIF	Ord=8	G=VAR_IN_OUT	Com=命令出力
+++D=OmronLib\MC_CmdTbl\SubParts\sTSK_ATTR	N=TskAttr	Ord=9	G=VAR_IN_OUT	Com=タスク属性
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
+++D=ARRAY[0..15] OF _sAXIS_REF	N=_MC_AX	Const=1	G=VAR_EXTERNAL

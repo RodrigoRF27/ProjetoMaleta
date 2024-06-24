@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<data>
+  <DataType Name="データ型2" BaseType="" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="">
+    <DataType Name="sTSK_CMD_IF" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="タスク指令I/F" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="25" OffsetType="NJ">
+      <DataType Name="Enable" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="タスク有効" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="SeriesExe" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="タスク連続実行" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="SingleExe" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="シングルブロック実行" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Stop" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="タスク停止" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="ErroReset" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="タスクエラー解除" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="MReset" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Mコードリセット" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="SeqNoSet" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="シーケンスNo.設定" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="SeqNo" BaseType="UINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="シーケンスNo." OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="sTSK_STS_IF" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="タスクステータスI/F" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="24" OffsetType="NJ">
+      <DataType Name="Enabled" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="タスク有効中" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Busy" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="タスクビジー" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Done" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="タスク完了" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Stopping" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="タスク停止" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Error" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="タスクエラー" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="MStrobe" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Mストローブ" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="SeqNo" BaseType="UINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="シーケンスNo." OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="MCode" BaseType="UINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Mコード" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="sCMD_OUT" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="ライブラリ出力I/F" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="23" OffsetType="NJ">
+      <DataType Name="PrgEnd" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="プログラムEND" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Done" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="完了" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="MStrobe" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Mストローブ" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Busy" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="実行中" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="CA" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="中断" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Error" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="エラー" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="ErrorID" BaseType="WORD" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="エラーコード" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="ErrorIDEx" BaseType="DWORD" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="拡張エラーコード" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="DigitalOutputs" BaseType="DWORD" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="MCode" BaseType="UINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Mコード" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="SeqNo" BaseType="UINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="sTSK_ATTR" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="タスク属性" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="22" OffsetType="NJ">
+      <DataType Name="GrpNo" BaseType="UINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="AxisNum" BaseType="UINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="AxisNo" BaseType="ARRAY[0..3] OF UINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="CurrentPos" BaseType="ARRAY[0..3] OF LREAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="現在目標位置" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="ReadAhead" BaseType="OmronLib\MC_CmdTbl\SubParts\sREAD_AHEAD" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="先読みデータ" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="sREAD_AHEAD" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="先読みデータ" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="4" OffsetType="NJ">
+      <DataType Name="State" BaseType="UINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="先読み中ステータス" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="BufMode" BaseType="_eMC_BUFFER_MODE" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="TraMode" BaseType="_eMC_TRANSITION_MODE" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="ThreadID" BaseType="UINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="スレッドID" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="SeqNo" BaseType="ARRAY[0..1] OF UINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="sCMD_MOVELINE_IN" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="直線補間命令 指令I/F" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="21" OffsetType="NJ">
+      <DataType Name="Exe" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="起動" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Pos" BaseType="ARRAY[0..3] OF LREAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="目標位置" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Vel" BaseType="LREAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="速度" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Acc" BaseType="LREAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="加速度" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Dec" BaseType="LREAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="減速度" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Jerk" BaseType="LREAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="ジャーク" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="CoordSys" BaseType="_eMC_COORD_SYSTEM" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="方向" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="BufMode" BaseType="_eMC_BUFFER_MODE" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="バッファモード" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="TraMode" BaseType="_eMC_TRANSITION_MODE" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="MoveMode" BaseType="_eMC_MOVE_MODE" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="移動方法選択" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="sCMD_MOVELINE_OUT" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="直線補間命令 ステータスI/F" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="20" OffsetType="NJ">
+      <DataType Name="Done" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Busy" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Active" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="CommandAborted" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Error" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="ErrorID" BaseType="WORD" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="sCMD_PTP_IN" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="PTP命令 指令I/F" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="19" OffsetType="NJ">
+      <DataType Name="Exe" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="起動" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Pos" BaseType="LREAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="目標位置" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Vel" BaseType="LREAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="速度" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Acc" BaseType="LREAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="加速度" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Dec" BaseType="LREAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="減速度" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Jerk" BaseType="LREAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="ジャーク" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Dir" BaseType="_eMC_DIRECTION" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="方向" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="BufMode" BaseType="_eMC_BUFFER_MODE" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="バッファモード" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="MoveMode" BaseType="_eMC_MOVE_MODE" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="移動方法選択" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="sCMD_PTP_OUT" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="PTP命令 ステータスI/F" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="18" OffsetType="NJ">
+      <DataType Name="Done" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Busy" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Active" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="CommandAborted" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Error" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="ErrorID" BaseType="WORD" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="sCMD_MOVECIR_IN" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="円弧補間命令 指令I/F" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="17" OffsetType="NJ">
+      <DataType Name="Exe" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="起動" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="CircAxes" BaseType="ARRAY[0..1] OF UINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="円弧軸指定" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="CircMode" BaseType="_eMC_CIRC_MODE" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="円弧補間モード" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="AuxPoint" BaseType="ARRAY[0..1] OF  LREAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="補助点" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="EndPoint" BaseType="ARRAY[0..1] OF  LREAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="終点" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="PathChoice" BaseType="_eMC_CIRC_PATHCHOICE" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="経路選択" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Vel" BaseType="LREAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="速度" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Acc" BaseType="LREAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="加速度" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Dec" BaseType="LREAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="減速度" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Jerk" BaseType="LREAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="ジャーク" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="CoordSys" BaseType="_eMC_COORD_SYSTEM" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="方向" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="BufMode" BaseType="_eMC_BUFFER_MODE" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="バッファモード" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="TraMode" BaseType="_eMC_TRANSITION_MODE" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="MoveMode" BaseType="_eMC_MOVE_MODE" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="移動方法選択" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="sCMD_MOVECIR_OUT" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="円弧補間命令 ステータスI/F" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="16" OffsetType="NJ">
+      <DataType Name="Done" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Busy" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Active" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="CommandAborted" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Error" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="ErrorID" BaseType="WORD" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+  </DataType>
+</data>
